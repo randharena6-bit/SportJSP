@@ -21,23 +21,244 @@
     </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <style>
-        .gradient-bg { background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%); }
-        .role-card { transition: all 0.3s ease; cursor: pointer; border: 2px solid transparent; }
-        .role-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(30, 64, 175, 0.2); }
-        .role-card.selected { border-color: #3b82f6; background: #eff6ff; }
-        .tab-active { border-bottom: 2px solid #3b82f6; color: #3b82f6; }
-        .tab-inactive { color: #64748b; }
-        .tab-inactive:hover { color: #3b82f6; }
+        .gradient-bg { 
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .gradient-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
+        
+        .role-card { 
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); 
+            cursor: pointer; 
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+        .role-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        .role-card:hover::before {
+            left: 100%;
+        }
+        .role-card:hover { 
+            transform: translateY(-8px) scale(1.02); 
+            box-shadow: 0 20px 40px rgba(30, 64, 175, 0.3);
+            border-color: #3b82f6;
+        }
+        .role-card.selected { 
+            border-color: #3b82f6 !important; 
+            background: rgba(59, 130, 246, 0.1) !important;
+            transform: translateY(-4px) scale(1.01);
+            box-shadow: 0 15px 35px rgba(30, 64, 175, 0.25);
+        }
+        
+        .role-card.selected .role-check {
+            display: flex !important;
+        }
+        
+        .tab-active { 
+            border-bottom: 3px solid #3b82f6; 
+            color: #3b82f6;
+            position: relative;
+        }
+        .tab-active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #3b82f6, #60a5fa);
+            animation: tabGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes tabGlow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        
+        .tab-inactive { 
+            color: #64748b;
+            transition: all 0.3s ease;
+        }
+        .tab-inactive:hover { 
+            color: #3b82f6;
+            transform: translateY(-2px);
+        }
+        
+        /* Form animations */
+        .form-container {
+            animation: slideInUp 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Form transition styles */
+        #registerForm {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+        
+        #registerForm:not(.hidden) {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .form-input {
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .form-input:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+        }
+        
+        .submit-btn {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .submit-btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+        }
+        
+        /* Loading animation */
+        .loading-spinner {
+            display: none;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        .loading .loading-spinner {
+            display: inline-block;
+        }
+        
+        .loading .btn-text {
+            display: none;
+        }
         
         /* Role Option Cards in Register Form */
         .role-option input:checked + .role-option-card {
-            border-color: #3b82f6;
-            background: #eff6ff;
+            border-color: #3b82f6 !important;
+            background: rgba(59, 130, 246, 0.1) !important;
             box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+            transform: scale(1.05);
         }
         .role-option input:checked + .role-option-card [class*="bg-"] {
-            transform: scale(1.1);
-            transition: transform 0.2s ease;
+            transform: scale(1.2) rotate(5deg);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Ensure role check icons are visible when selected */
+        .role-check {
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .role-card.selected .role-check,
+        .role-option input:checked + .role-option-card .role-check {
+            display: flex !important;
+        }
+        
+        /* Success/Error animations */
+        .shake {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+        
+        .success-pulse {
+            animation: successPulse 0.6s ease;
+        }
+        
+        @keyframes successPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Floating animation for role cards */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        /* Staggered animation for role cards */
+        .role-card:nth-child(1) { animation-delay: 0.1s; }
+        .role-card:nth-child(2) { animation-delay: 0.2s; }
+        .role-card:nth-child(3) { animation-delay: 0.3s; }
+        .role-card:nth-child(4) { animation-delay: 0.4s; }
+        
+        /* 2FA section animation */
+        #twoFASection {
+            transition: opacity 0.3s ease;
         }
     </style>
 </head>
@@ -143,7 +364,7 @@
                         </div>
 
                         <!-- Login Form -->
-                        <form id="loginForm" class="space-y-6" onsubmit="handleLogin(event)">
+                        <form id="loginForm" class="space-y-6 form-container" onsubmit="handleLogin(event)">
                             <input type="hidden" name="role" id="selectedRole" value="athlete">
                             
                             <div>
@@ -151,7 +372,7 @@
                                 <div class="relative">
                                     <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="text" name="username" required 
-                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="votre@email.com">
                                 </div>
                             </div>
@@ -161,7 +382,7 @@
                                 <div class="relative">
                                     <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="password" name="password" required id="loginPassword"
-                                           class="w-full pl-12 pr-12 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-12 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="••••••••">
                                     <button type="button" onclick="togglePassword('loginPassword', this)" class="absolute right-4 top-1/2 -translate-y-1/2 text-secondary-400 hover:text-secondary-600">
                                         <i class="fas fa-eye"></i>
@@ -177,13 +398,15 @@
                                 <a href="#" class="text-sm text-primary-600 hover:text-primary-700 font-medium">Mot de passe oublié ?</a>
                             </div>
 
-                            <button type="submit" class="w-full py-4 gradient-bg text-white rounded-xl font-semibold hover:opacity-90 transition shadow-lg shadow-primary-500/30">
-                                <i class="fas fa-sign-in-alt mr-2"></i>Se connecter
+                            <button type="submit" class="w-full py-4 gradient-bg text-white rounded-xl font-semibold hover:opacity-90 transition shadow-lg shadow-primary-500/30 submit-btn">
+                                <i class="fas fa-sign-in-alt mr-2 btn-text"></i>
+                                <span class="btn-text">Se connecter</span>
+                                <i class="fas fa-spinner loading-spinner"></i>
                             </button>
                         </form>
 
                         <!-- Register Form -->
-                        <form id="registerForm" class="space-y-6 hidden" onsubmit="handleRegister(event)">
+                        <form id="registerForm" class="space-y-6 hidden form-container" onsubmit="handleRegister(event)">
                             <input type="hidden" name="role" id="registerRole" value="athlete">
                             
                             <!-- Role Selection Display -->
@@ -245,13 +468,13 @@
                                 <div>
                                     <label class="block text-sm font-medium text-secondary-700 mb-2">Prénom</label>
                                     <input type="text" name="firstname" required 
-                                           class="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="Jean">
                                 </div>
                                 <div>
                                     <label class="block text-sm font-medium text-secondary-700 mb-2">Nom</label>
                                     <input type="text" name="lastname" required 
-                                           class="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full px-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="Rakoto">
                                 </div>
                             </div>
@@ -261,7 +484,7 @@
                                 <div class="relative">
                                     <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="email" name="email" required 
-                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="votre@email.com">
                                 </div>
                             </div>
@@ -271,7 +494,7 @@
                                 <div class="relative">
                                     <i class="fas fa-id-card absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="text" name="nin" required 
-                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="1234567890123">
                                 </div>
                             </div>
@@ -281,7 +504,7 @@
                                 <div class="relative">
                                     <i class="fas fa-phone absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="tel" name="phone" required 
-                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-4 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="+261 34 XX XXX XX">
                                 </div>
                             </div>
@@ -291,7 +514,7 @@
                                 <div class="relative">
                                     <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="password" name="password" required id="regPassword"
-                                           class="w-full pl-12 pr-12 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-12 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="••••••••">
                                     <button type="button" onclick="togglePassword('regPassword', this)" class="absolute right-4 top-1/2 -translate-y-1/2 text-secondary-400 hover:text-secondary-600">
                                         <i class="fas fa-eye"></i>
@@ -305,7 +528,7 @@
                                 <div class="relative">
                                     <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 text-secondary-400"></i>
                                     <input type="password" name="confirmPassword" required id="regConfirmPassword"
-                                           class="w-full pl-12 pr-12 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition"
+                                           class="w-full pl-12 pr-12 py-3 border border-secondary-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition form-input"
                                            placeholder="••••••••">
                                 </div>
                             </div>
@@ -317,8 +540,10 @@
                                 </span>
                             </div>
 
-                            <button type="submit" class="w-full py-4 gradient-bg text-white rounded-xl font-semibold hover:opacity-90 transition shadow-lg shadow-primary-500/30">
-                                <i class="fas fa-user-plus mr-2"></i>Créer mon compte
+                            <button type="submit" class="w-full py-4 gradient-bg text-white rounded-xl font-semibold hover:opacity-90 transition shadow-lg shadow-primary-500/30 submit-btn">
+                                <i class="fas fa-user-plus mr-2 btn-text"></i>
+                                <span class="btn-text">Créer mon compte</span>
+                                <i class="fas fa-spinner loading-spinner"></i>
                             </button>
                         </form>
 
@@ -361,12 +586,17 @@
         async function handleLogin(event) {
             event.preventDefault();
             const form = event.target;
+            const submitBtn = form.querySelector('.submit-btn');
             const formData = new FormData(form);
             const data = {
                 username: formData.get('username'),
                 password: formData.get('password'),
                 role: formData.get('role')
             };
+
+            // Add loading state
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
 
             try {
                 const response = await fetch(`${API_BASE_URL}/login`, {
@@ -382,20 +612,36 @@
                 if (result.success) {
                     localStorage.setItem('token', result.token);
                     localStorage.setItem('user', JSON.stringify(result.user));
-                    alert('Connexion réussie !');
-                    window.location.href = 'dashboard.jsp';
+                    form.classList.add('success-pulse');
+                    showNotification('Connexion réussie !', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.jsp';
+                    }, 1000);
                 } else {
-                    alert(result.message || 'Erreur lors de la connexion');
+                    form.classList.add('shake');
+                    showNotification(result.message || 'Erreur lors de la connexion', 'error');
+                    setTimeout(() => {
+                        form.classList.remove('shake');
+                    }, 500);
                 }
             } catch (error) {
                 console.error('Login error:', error);
-                alert('Erreur de connexion au serveur');
+                form.classList.add('shake');
+                showNotification('Erreur de connexion au serveur', 'error');
+                setTimeout(() => {
+                    form.classList.remove('shake');
+                }, 500);
+            } finally {
+                // Remove loading state
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
             }
         }
 
         async function handleRegister(event) {
             event.preventDefault();
             const form = event.target;
+            const submitBtn = form.querySelector('.submit-btn');
             const formData = new FormData(form);
             const data = {
                 firstname: formData.get('firstname'),
@@ -407,6 +653,10 @@
                 confirmPassword: formData.get('confirmPassword'),
                 role: formData.get('role')
             };
+
+            // Add loading state
+            submitBtn.classList.add('loading');
+            submitBtn.disabled = true;
 
             try {
                 const response = await fetch(`${API_BASE_URL}/register`, {
@@ -422,15 +672,72 @@
                 if (result.success) {
                     localStorage.setItem('token', result.token);
                     localStorage.setItem('user', JSON.stringify(result.user));
-                    alert('Compte créé avec succès !');
-                    window.location.href = 'dashboard.jsp';
+                    form.classList.add('success-pulse');
+                    showNotification('Compte créé avec succès !', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'dashboard.jsp';
+                    }, 1000);
                 } else {
-                    alert(result.message || 'Erreur lors de l\'inscription');
+                    form.classList.add('shake');
+                    showNotification(result.message || 'Erreur lors de l\'inscription', 'error');
+                    setTimeout(() => {
+                        form.classList.remove('shake');
+                    }, 500);
                 }
             } catch (error) {
                 console.error('Register error:', error);
-                alert('Erreur de connexion au serveur');
+                form.classList.add('shake');
+                showNotification('Erreur de connexion au serveur', 'error');
+                setTimeout(() => {
+                    form.classList.remove('shake');
+                }, 500);
+            } finally {
+                // Remove loading state
+                submitBtn.classList.remove('loading');
+                submitBtn.disabled = false;
             }
+        }
+
+        function showNotification(message, type) {
+            // Remove existing notifications
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `notification fixed top-4 right-4 px-6 py-4 rounded-xl shadow-lg z-50 flex items-center space-x-3 transform translate-x-full transition-transform duration-300`;
+            
+            if (type === 'success') {
+                notification.classList.add('bg-green-500', 'text-white');
+                notification.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <span>${message}</span>
+                `;
+            } else {
+                notification.classList.add('bg-red-500', 'text-white');
+                notification.innerHTML = `
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>${message}</span>
+                `;
+            }
+
+            document.body.appendChild(notification);
+
+            // Animate in
+            setTimeout(() => {
+                notification.classList.remove('translate-x-full');
+                notification.classList.add('translate-x-0');
+            }, 100);
+
+            // Remove after 3 seconds
+            setTimeout(() => {
+                notification.classList.add('translate-x-full');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 3000);
         }
 
         function selectRole(role) {
@@ -438,29 +745,53 @@
             document.getElementById('selectedRole').value = role;
             document.getElementById('registerRole').value = role;
             
-            // Update UI - Left panel role cards
+            // Update UI - Left panel role cards with animation
             document.querySelectorAll('.role-card').forEach(card => {
-                card.classList.remove('selected');
-                card.querySelector('.role-check').classList.add('hidden');
+                if (card.dataset.role === role) {
+                    card.classList.add('selected');
+                    const checkIcon = card.querySelector('.role-check');
+                    if (checkIcon) {
+                        checkIcon.style.display = 'flex';
+                        checkIcon.style.animation = 'successPulse 0.4s ease';
+                    }
+                } else {
+                    card.classList.remove('selected');
+                    const checkIcon = card.querySelector('.role-check');
+                    if (checkIcon) {
+                        checkIcon.style.display = 'none';
+                    }
+                }
             });
             
-            const selectedCard = document.querySelector(`[data-role="${role}"]`);
-            if (selectedCard) {
-                selectedCard.classList.add('selected');
-                selectedCard.querySelector('.role-check').classList.remove('hidden');
-            }
-            
-            // Sync register form radio buttons
+            // Sync register form radio buttons with animation
             document.querySelectorAll('input[name="roleSelect"]').forEach(radio => {
-                radio.checked = (radio.value === role);
+                const card = radio.nextElementSibling;
+                if (radio.value === role) {
+                    radio.checked = true;
+                    if (card) {
+                        card.style.transform = 'scale(1.05)';
+                        setTimeout(() => {
+                            card.style.transform = 'scale(1)';
+                        }, 200);
+                    }
+                } else {
+                    radio.checked = false;
+                }
             });
 
-            // Show 2FA for admin
+            // Show 2FA for admin with animation
             const twoFASection = document.getElementById('twoFASection');
             if (role === 'admin') {
                 twoFASection.classList.remove('hidden');
+                twoFASection.style.opacity = '0';
+                setTimeout(() => {
+                    twoFASection.style.opacity = '1';
+                }, 50);
             } else {
-                twoFASection.classList.add('hidden');
+                twoFASection.style.opacity = '0';
+                setTimeout(() => {
+                    twoFASection.classList.add('hidden');
+                }, 200);
             }
         }
 
@@ -471,15 +802,41 @@
             const registerTab = document.getElementById('registerTab');
 
             if (tab === 'login') {
-                loginForm.classList.remove('hidden');
-                registerForm.classList.add('hidden');
+                // Fade out register form
+                registerForm.style.opacity = '0';
+                registerForm.style.transform = 'translateX(20px)';
+                
+                setTimeout(() => {
+                    registerForm.classList.add('hidden');
+                    loginForm.classList.remove('hidden');
+                    
+                    // Fade in login form
+                    setTimeout(() => {
+                        loginForm.style.opacity = '1';
+                        loginForm.style.transform = 'translateX(0)';
+                    }, 50);
+                }, 200);
+                
                 loginTab.classList.add('tab-active');
                 loginTab.classList.remove('tab-inactive');
                 registerTab.classList.remove('tab-active');
                 registerTab.classList.add('tab-inactive');
             } else {
-                loginForm.classList.add('hidden');
-                registerForm.classList.remove('hidden');
+                // Fade out login form
+                loginForm.style.opacity = '0';
+                loginForm.style.transform = 'translateX(-20px)';
+                
+                setTimeout(() => {
+                    loginForm.classList.add('hidden');
+                    registerForm.classList.remove('hidden');
+                    
+                    // Fade in register form
+                    setTimeout(() => {
+                        registerForm.style.opacity = '1';
+                        registerForm.style.transform = 'translateX(0)';
+                    }, 50);
+                }, 200);
+                
                 registerTab.classList.add('tab-active');
                 registerTab.classList.remove('tab-inactive');
                 loginTab.classList.remove('tab-active');
