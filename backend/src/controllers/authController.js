@@ -87,8 +87,9 @@ exports.register = async (req, res) => {
           [userId, firstname, lastname]
         );
       } else if (roleUpper === 'ADMIN_FEDERATION') {
+        // Pour les admins fédération, on utilise la table admins pour l'instant
         await client.query(
-          `INSERT INTO federation_admins (user_id, first_name, last_name, created_at, updated_at)
+          `INSERT INTO admins (user_id, first_name, last_name, created_at, updated_at)
            VALUES ($1, $2, $3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
           [userId, firstname, lastname]
         );
@@ -156,20 +157,19 @@ exports.login = async (req, res) => {
               CASE 
                 WHEN r.name = 'ATHLETE' THEN a.first_name
                 WHEN r.name = 'COACH' THEN c.first_name
-                WHEN r.name = 'ADMIN_FEDERATION' THEN f.first_name
                 WHEN r.name = 'ADMIN' THEN ad.first_name
+                ELSE 'Utilisateur'
               END as firstname,
               CASE 
                 WHEN r.name = 'ATHLETE' THEN a.last_name
                 WHEN r.name = 'COACH' THEN c.last_name
-                WHEN r.name = 'ADMIN_FEDERATION' THEN f.last_name
                 WHEN r.name = 'ADMIN' THEN ad.last_name
+                ELSE ''
               END as lastname
        FROM users u
        JOIN roles r ON u.role_id = r.id
        LEFT JOIN athletes a ON u.id = a.user_id AND r.name = 'ATHLETE'
        LEFT JOIN coaches c ON u.id = c.user_id AND r.name = 'COACH'
-       LEFT JOIN federation_admins f ON u.id = f.user_id AND r.name = 'ADMIN_FEDERATION'
        LEFT JOIN admins ad ON u.id = ad.user_id AND r.name = 'ADMIN'
        WHERE (u.email = $1 OR u.nin = $1) AND r.name = $2`,
       [username, roleUpper]
