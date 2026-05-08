@@ -32,7 +32,7 @@
         <aside class="w-64 bg-white border-r border-secondary-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-secondary-800">SPORT<span class="text-primary-600">CONNECT</span></span>
@@ -60,7 +60,7 @@
                         <p class="text-secondary-500 text-sm">Base de données nationale des licenciés</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <button class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium hover:bg-green-200 transition"><i class="fas fa-file-export mr-2"></i>Export Excel</button>
+                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-green-200 transition"><i class="fas fa-file-export mr-2"></i>Export Excel</button>
                         <button class="px-4 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition"><i class="fas fa-plus mr-2"></i>Ajouter</button>
                     </div>
                 </div>
@@ -125,8 +125,8 @@
                                     </td>
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Senior</span></td>
                                     <td class="py-4 px-6 text-secondary-700">CAA</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Active</span></td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-purple-100 text-purple-700 rounded-lg text-sm font-semibold">87.5 Elite</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Active</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-purple-700 rounded-lg text-sm font-semibold">87.5 Elite</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-primary-600 hover:text-primary-700 mr-3"><i class="fas fa-eye"></i></button>
                                         <button class="text-secondary-400 hover:text-secondary-600"><i class="fas fa-edit"></i></button>
@@ -143,9 +143,9 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Junior</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Junior</span></td>
                                     <td class="py-4 px-6 text-secondary-700">Club Olympique</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Active</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Active</span></td>
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-semibold">78.2 Prometteur</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-primary-600 hover:text-primary-700 mr-3"><i class="fas fa-eye"></i></button>
@@ -163,12 +163,12 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded-lg text-sm">Cadet</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Cadet</span></td>
                                     <td class="py-4 px-6 text-secondary-700">CAA</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded-lg text-sm">En attente</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">En attente</span></td>
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded-lg text-sm font-semibold">-- Éval.</span></td>
                                     <td class="py-4 px-6">
-                                        <button class="text-green-600 hover:text-green-700 mr-3" title="Valider"><i class="fas fa-check"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-700 mr-3" title="Valider"><i class="fas fa-check"></i></button>
                                         <button class="text-red-600 hover:text-red-700 mr-3" title="Rejeter"><i class="fas fa-times"></i></button>
                                         <button class="text-primary-600 hover:text-primary-700"><i class="fas fa-eye"></i></button>
                                     </td>

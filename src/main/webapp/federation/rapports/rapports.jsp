@@ -20,7 +20,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
@@ -64,19 +64,19 @@
                         <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-users text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Croissance licenciés</h3>
                         <p class="text-2xl font-bold text-slate-800">+12.4%</p>
-                        <p class="text-xs text-green-500 mt-1"><i class="fas fa-arrow-up"></i> vs saison précédente</p>
+                        <p class="text-xs text-blue-500 mt-1"><i class="fas fa-arrow-up"></i> vs saison précédente</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-trophy text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-trophy text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Compétitions organisées</h3>
                         <p class="text-2xl font-bold text-slate-800">18</p>
                         <p class="text-xs text-slate-500 mt-1">Saison en cours</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-star text-purple-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-star text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Talents identifiés</h3>
                         <p class="text-2xl font-bold text-slate-800">47</p>
-                        <p class="text-xs text-green-500 mt-1"><i class="fas fa-arrow-up"></i> +15 vs N-1</p>
+                        <p class="text-xs text-blue-500 mt-1"><i class="fas fa-arrow-up"></i> +15 vs N-1</p>
                     </div>
                 </div>
 
@@ -117,7 +117,7 @@
                                 <div class="text-sm text-slate-500">Talents confirmés</div>
                             </div>
                             <div class="bg-green-50 rounded-xl p-4 text-center">
-                                <div class="text-3xl font-bold text-green-700 mb-1">12</div>
+                                <div class="text-3xl font-bold text-blue-700 mb-1">12</div>
                                 <div class="text-sm text-slate-500">Intégrés centres</div>
                             </div>
                         </div>

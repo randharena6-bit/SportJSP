@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -51,12 +51,12 @@
             <main class="p-8">
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-check-circle text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-check-circle text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Fédérations actives</h3>
                         <p class="text-2xl font-bold text-slate-800">42</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-cog text-amber-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-cog text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">En configuration</h3>
                         <p class="text-2xl font-bold text-slate-800">2</p>
                     </div>
@@ -96,12 +96,12 @@
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
                                             <div class="w-24 h-2 bg-slate-200 rounded-full mr-2">
-                                                <div class="h-2 bg-green-500 rounded-full" style="width: 85%"></div>
+                                                <div class="h-2 bg-blue-500 rounded-full" style="width: 85%"></div>
                                             </div>
                                             <span class="text-sm text-slate-600">85%</span>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Active</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Active</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
                                         <button class="text-blue-600 hover:text-blue-700"><i class="fas fa-chart-bar"></i></button>
@@ -110,7 +110,7 @@
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-futbol text-emerald-600"></i></div>
+                                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-futbol text-blue-600"></i></div>
                                             <div>
                                                 <p class="font-medium text-slate-800">Football</p>
                                                 <p class="text-xs text-slate-500">FMF</p>
@@ -122,12 +122,12 @@
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
                                             <div class="w-24 h-2 bg-slate-200 rounded-full mr-2">
-                                                <div class="h-2 bg-green-500 rounded-full" style="width: 92%"></div>
+                                                <div class="h-2 bg-blue-500 rounded-full" style="width: 92%"></div>
                                             </div>
                                             <span class="text-sm text-slate-600">92%</span>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Active</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Active</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
                                         <button class="text-blue-600 hover:text-blue-700"><i class="fas fa-chart-bar"></i></button>
@@ -136,7 +136,7 @@
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-basketball-ball text-purple-600"></i></div>
+                                            <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-basketball-ball text-blue-600"></i></div>
                                             <div>
                                                 <p class="font-medium text-slate-800">Basketball</p>
                                                 <p class="text-xs text-slate-500">FMBB</p>
@@ -148,12 +148,12 @@
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
                                             <div class="w-24 h-2 bg-slate-200 rounded-full mr-2">
-                                                <div class="h-2 bg-amber-500 rounded-full" style="width: 65%"></div>
+                                                <div class="h-2 bg-blue-500 rounded-full" style="width: 65%"></div>
                                             </div>
                                             <span class="text-sm text-slate-600">65%</span>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded-lg text-sm">Config</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Config</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
                                         <button class="text-blue-600 hover:text-blue-700"><i class="fas fa-chart-bar"></i></button>

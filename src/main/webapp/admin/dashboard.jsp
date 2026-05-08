@@ -24,13 +24,13 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-shield-alt text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
-                <div class="mb-6 p-3 bg-rose-50 rounded-lg">
-                    <p class="text-xs text-rose-600 font-semibold uppercase">Administration Système</p>
+                <div class="mb-6 p-3 bg-blue-50 rounded-lg">
+                    <p class="text-xs text-blue-600 font-semibold uppercase">Administration Système</p>
                     <p class="text-sm text-slate-700">Ministère du Numérique</p>
                 </div>
                 <nav class="space-y-1">
@@ -57,12 +57,12 @@
                         <p class="text-slate-500 text-sm">Supervision de la plateforme nationale</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <div class="flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
-                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse-dot"></span>
+                        <div class="flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                            <span class="w-2 h-2 bg-blue-500 rounded-full mr-2 pulse-dot"></span>
                             Système opérationnel
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://ui-avatars.com/api/?name=Admin+Sys&background=e11d48&color=fff" class="w-10 h-10 rounded-full border-2 border-rose-200">
+                            <img src="https://ui-avatars.com/api/?name=Admin+Sys&background=e11d48&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
                             <span class="font-medium text-slate-700">Admin Système</span>
                         </div>
                     </div>
@@ -71,13 +71,13 @@
 
             <main class="p-8">
                 <!-- Alert Banner -->
-                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-8 flex items-start">
-                    <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-3"></i>
+                <div class="bg-blue-50 border border-aelur200 rounded-xl p-4 mb-8 flex items-start">
+                    <i class="fas fa-exclamation-triangle text-blue-500 mt-1 mr-3"></i>
                     <div class="flex-1">
-                        <h4 class="font-semibold text-amber-800">Alerte de sécurité: Tentative d'accès suspecte</h4>
-                        <p class="text-sm text-amber-700">3 tentatives échouées détectées depuis l'IP 197.XX.XX.XX - Fédération Football</p>
+                        <h4 class="font-semibold text-blue-800">Alerte de sécurité: Tentative d'accès suspecte</h4>
+                        <p class="text-sm text-blue-700">3 tentatives échouées détectées depuis l'IP 197.XX.XX.XX - Fédération Football</p>
                     </div>
-                    <button class="px-4 py-2 bg-amber-100 text-amber-700 rounded-lg font-medium hover:bg-amber-200">Examiner</button>
+                    <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-amrlu-00">Examiner</button>
                 </div>
 
                 <!-- System Stats -->
@@ -86,25 +86,25 @@
                         <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-landmark text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Fédérations actives</h3>
                         <p class="text-2xl font-bold text-slate-800">42/45</p>
-                        <p class="text-xs text-green-500 mt-1"><i class="fas fa-check"></i> 93% digitalisées</p>
+                        <p class="text-xs text-blue-500 mt-1"><i class="fas fa-check"></i> 93% digitalisées</p>
                     </div>
                     <div class="stat-card bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-users text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-users text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Athlètes enregistrés</h3>
                         <p class="text-2xl font-bold text-slate-800">45,678</p>
-                        <p class="text-xs text-green-500 mt-1"><i class="fas fa-arrow-up"></i> +8.5% ce mois</p>
+                        <p class="text-xs text-blue-500 mt-1"><i class="fas fa-arrow-up"></i> +8.5% ce mois</p>
                     </div>
                     <div class="stat-card bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-exchange-alt text-purple-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-purpuple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-exchange-alt text-publp600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Transactions (Mai)</h3>
                         <p class="text-2xl font-bold text-slate-800">12,456</p>
                         <p class="text-xs text-slate-500 mt-1">Vol: 342.8M Ar</p>
                     </div>
                     <div class="stat-card bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-bug text-rose-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-bug text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Incidents actifs</h3>
-                        <p class="text-2xl font-bold text-rose-600">3</p>
-                        <p class="text-xs text-rose-500 mt-1">Nécessitent attention</p>
+                        <p class="text-2xl font-bold text-blue-600">3</p>
+                        <p class="text-xs text-blue-500 mt-1">Nécessitent attention</p>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                     <!-- System Health -->
                     <div class="lg:col-span-2 space-y-8">
                         <div class="bg-white rounded-2xl shadow-sm p-6">
-                            <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-heartbeat text-green-500 mr-2"></i>État du Système</h2>
+                            <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-heartbeat text-blue-500 mr-2"></i>État du Système</h2>
                             <div class="grid grid-cols-3 gap-4">
                                 <div class="bg-slate-50 rounded-xl p-4 text-center">
                                     <div class="w-16 h-16 mx-auto mb-2 relative">
@@ -155,7 +155,7 @@
                             <div class="p-4">
                                 <div class="space-y-3">
                                     <div class="flex items-center p-3 bg-slate-50 rounded-lg">
-                                        <div class="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                                         <span class="text-sm text-slate-600">14:32:15</span>
                                         <span class="mx-3 text-slate-300">|</span>
                                         <span class="text-sm text-slate-800">Nouvelle connexion - Fédération Athlétisme</span>
@@ -172,11 +172,11 @@
                                         <span class="mx-3 text-slate-300">|</span>
                                         <span class="text-sm text-slate-800">Paiement Mobile Money confirmé - 27,000 Ar</span>
                                     </div>
-                                    <div class="flex items-center p-3 bg-amber-50 rounded-lg">
-                                        <div class="w-2 h-2 bg-amber-500 rounded-full mr-3"></div>
+                                    <div class="flex items-center p-3 bg-blue-50 rounded-lg">
+                                        <div class="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                                         <span class="text-sm text-slate-600">14:20:05</span>
                                         <span class="mx-3 text-slate-300">|</span>
-                                        <span class="text-sm text-amber-800">Alerte IA - Performance anomalie détectée</span>
+                                        <span class="text-sm text-blue-800">Alerte IA - Performance anomalie détectée</span>
                                     </div>
                                 </div>
                             </div>
@@ -209,19 +209,19 @@
                                 <div class="space-y-3">
                                     <div class="flex items-center justify-between">
                                         <span class="text-sm text-slate-700">Athlétisme</span>
-                                        <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Active</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span class="text-sm text-slate-700">Football</span>
-                                        <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Active</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span class="text-sm text-slate-700">Basketball</span>
-                                        <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Active</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Active</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span class="text-sm text-slate-700">Natation</span>
-                                        <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs">Config</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Config</span>
                                     </div>
                                     <div class="flex items-center justify-between">
                                         <span class="text-sm text-slate-700">Judo</span>

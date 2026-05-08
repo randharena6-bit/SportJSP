@@ -428,8 +428,8 @@
                                     <label class="role-option cursor-pointer">
                                         <input type="radio" name="roleSelect" value="coach" class="hidden" onchange="selectRole('coach')">
                                         <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="coach">
-                                            <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
-                                                <i class="fas fa-dumbbell text-emerald-600"></i>
+                                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                                                <i class="fas fa-dumbbell text-blue-600"></i>
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-sm">Entraîneur</div>
@@ -440,8 +440,8 @@
                                     <label class="role-option cursor-pointer">
                                         <input type="radio" name="roleSelect" value="federation" class="hidden" onchange="selectRole('federation')">
                                         <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="federation">
-                                            <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
-                                                <i class="fas fa-landmark text-amber-600"></i>
+                                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                                                <i class="fas fa-landmark text-blue-600"></i>
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-sm">Fédération</div>
@@ -452,8 +452,8 @@
                                     <label class="role-option cursor-pointer">
                                         <input type="radio" name="roleSelect" value="admin" class="hidden" onchange="selectRole('admin')">
                                         <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="admin">
-                                            <div class="w-10 h-10 rounded-lg bg-rose-100 flex items-center justify-center">
-                                                <i class="fas fa-shield-alt text-rose-600"></i>
+                                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                                                <i class="fas fa-shield-alt text-blue-600"></i>
                                             </div>
                                             <div>
                                                 <div class="font-semibold text-sm">Admin</div>
@@ -549,12 +549,12 @@
 
                         <!-- 2FA Section (Admin only) -->
                         <div id="twoFASection" class="hidden mt-6 pt-6 border-t border-secondary-200">
-                            <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-4">
+                            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-4">
                                 <div class="flex items-start">
-                                    <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-3"></i>
+                                    <i class="fas fa-exclamation-triangle text-blue-500 mt-1 mr-3"></i>
                                     <div>
-                                        <h4 class="font-semibold text-amber-800">Authentification 2FA requise</h4>
-                                        <p class="text-sm text-amber-700">Pour les administrateurs, une vérification supplémentaire est nécessaire.</p>
+                                        <h4 class="font-semibold text-blue-800">Authentification 2FA requise</h4>
+                                        <p class="text-sm text-blue-700">Pour les administrateurs, une vérification supplémentaire est nécessaire.</p>
                                     </div>
                                 </div>
                             </div>
@@ -720,7 +720,7 @@
             notification.className = `notification fixed top-4 right-4 px-6 py-4 rounded-xl shadow-lg z-50 flex items-center space-x-3 transform translate-x-full transition-transform duration-300`;
             
             if (type === 'success') {
-                notification.classList.add('bg-green-500', 'text-white');
+                notification.classList.add('bg-blue-500', 'text-white');
                 notification.innerHTML = `
                     <i class="fas fa-check-circle"></i>
                     <span>${message}</span>

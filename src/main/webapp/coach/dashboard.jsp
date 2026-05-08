@@ -20,11 +20,11 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
-                <div class="mb-6 p-4 bg-emerald-50 rounded-xl">
-                    <p class="text-xs text-emerald-600 font-semibold uppercase">Entraîneur</p>
+                <div class="mb-6 p-4 bg-blue-50 rounded-xl">
+                    <p class="text-xs text-blue-600 font-semibold uppercase">Entraîneur</p>
                     <p class="font-semibold text-slate-800">Rakoto Luc</p>
                     <p class="text-xs text-slate-500">CAA - Athlétisme</p>
                 </div>
@@ -51,7 +51,7 @@
                         <p class="text-slate-500 text-sm">Vue d'ensemble de l'équipe</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://ui-avatars.com/api/?name=Coach+Rakoto&background=10b981&color=fff" class="w-10 h-10 rounded-full border-2 border-emerald-200">
+                        <img src="https://ui-avatars.com/api/?name=Coach+Rakoto&background=10b981&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
                         <span class="font-medium text-slate-700">Rakoto Luc</span>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <p class="text-2xl font-bold text-slate-800">24</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-check-circle text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-check-circle text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Actifs</h3>
                         <p class="text-2xl font-bold text-slate-800">21</p>
                     </div>
@@ -76,7 +76,7 @@
                         <p class="text-2xl font-bold text-slate-800">2</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-star text-purple-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-star text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Score talent moyen</h3>
                         <p class="text-2xl font-bold text-slate-800">78.4</p>
                     </div>
@@ -86,14 +86,14 @@
                     <!-- Next Sessions -->
                     <div class="bg-white rounded-2xl shadow-sm">
                         <div class="p-6 border-b border-slate-100">
-                            <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-calendar-alt text-emerald-500 mr-2"></i>Prochains entraînements</h2>
+                            <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-calendar-alt text-blue-500 mr-2"></i>Prochains entraînements</h2>
                         </div>
                         <div class="p-6">
                             <div class="space-y-4">
-                                <div class="flex items-center p-4 bg-emerald-50 rounded-xl">
-                                    <div class="w-16 h-16 bg-emerald-100 rounded-xl flex flex-col items-center justify-center mr-4">
-                                        <span class="text-xs text-emerald-600 font-bold">MAI</span>
-                                        <span class="text-xl font-bold text-emerald-700">07</span>
+                                <div class="flex items-center p-4 bg-blue-50 rounded-xl">
+                                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex flex-col items-center justify-center mr-4">
+                                        <span class="text-xs text-blue-600 font-bold">MAI</span>
+                                        <span class="text-xl font-bold text-blue-700">07</span>
                                     </div>
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Entraînement 100m/200m</h4>
@@ -119,7 +119,7 @@
                     <!-- Performance Alerts -->
                     <div class="bg-white rounded-2xl shadow-sm">
                         <div class="p-6 border-b border-slate-100">
-                            <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-exclamation-triangle text-amber-500 mr-2"></i>Alertes athlètes</h2>
+                            <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-exclamation-triangle text-blue-500 mr-2"></i>Alertes athlètes</h2>
                         </div>
                         <div class="p-6">
                             <div class="space-y-4">
@@ -130,15 +130,15 @@
                                         <p class="text-sm text-slate-600 mt-1">Tension ischio-jambier signalée hier</p>
                                     </div>
                                 </div>
-                                <div class="flex items-start p-4 bg-amber-50 rounded-xl border-l-4 border-amber-500">
-                                    <i class="fas fa-chart-line text-amber-500 mt-1 mr-3"></i>
+                                <div class="flex items-start p-4 bg-blue-50 rounded-xl border-l-4 border-amber-500">
+                                    <i class="fas fa-chart-line text-blue-500 mt-1 mr-3"></i>
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Raso Paul - Régression</h4>
                                         <p class="text-sm text-slate-600 mt-1">Chrono 100m dégradé de 0.3s</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start p-4 bg-green-50 rounded-xl border-l-4 border-green-500">
-                                    <i class="fas fa-arrow-up text-green-500 mt-1 mr-3"></i>
+                                    <i class="fas fa-arrow-up text-blue-500 mt-1 mr-3"></i>
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Rakoto Jean - Progression</h4>
                                         <p class="text-sm text-slate-600 mt-1">Nouveau PB sur 100m: 10.45s</p>

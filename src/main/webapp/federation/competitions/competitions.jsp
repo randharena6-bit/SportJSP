@@ -20,7 +20,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
@@ -82,7 +82,7 @@
                                     <td class="py-4 px-6 text-slate-700">15-17 Mai 2025</td>
                                     <td class="py-4 px-6 text-slate-700">Stade Mahamasina, Tana</td>
                                     <td class="py-4 px-6"><span class="font-semibold text-slate-800">156</span> <span class="text-slate-500">/ 200</span></td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Inscriptions ouvertes</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Inscriptions ouvertes</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-eye"></i></button>
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
@@ -97,7 +97,7 @@
                                     <td class="py-4 px-6 text-slate-700">8-10 Juin 2025</td>
                                     <td class="py-4 px-6 text-slate-700">Stade Municipal, Toamasina</td>
                                     <td class="py-4 px-6"><span class="font-semibold text-slate-800">89</span> <span class="text-slate-500">/ 150</span></td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded-lg text-sm">En préparation</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">En préparation</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-eye"></i></button>
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>

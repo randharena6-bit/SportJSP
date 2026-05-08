@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -44,7 +44,7 @@
                         <h1 class="text-2xl font-bold text-slate-800">Intelligence Artificielle</h1>
                         <p class="text-slate-500 text-sm">Supervision des algorithmes et modèles ML</p>
                     </div>
-                    <div class="flex items-center px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">
+                    <div class="flex items-center px-3 py-1 bg-blue-100 text-purple-700 rounded-full text-sm">
                         <span class="w-2 h-2 bg-purple-500 rounded-full mr-2 animate-pulse"></span>
                         Modèles actifs
                     </div>
@@ -62,7 +62,7 @@
                             <span class="text-purple-100">Précision modèle</span>
                         </div>
                     </div>
-                    <div class="bg-gradient-to-r from-rose-500 to-rose-600 rounded-2xl p-6 text-white">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-6 text-white">
                         <h3 class="font-semibold mb-2"><i class="fas fa-exclamation-triangle mr-2"></i>Performance Anomaly Detector</h3>
                         <p class="text-rose-100 text-sm mb-4">Alertes doping/anomalies</p>
                         <div class="flex items-center justify-between">
@@ -106,18 +106,18 @@
                 <!-- Active Alerts -->
                 <div class="bg-white rounded-2xl shadow-sm">
                     <div class="p-6 border-b border-slate-100 flex items-center justify-between">
-                        <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-bell text-rose-500 mr-2"></i>Alertes IA en attente de validation</h2>
-                        <span class="px-3 py-1 bg-rose-100 text-rose-700 rounded-full text-sm font-medium">3 alertes</span>
+                        <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-bell text-blue-500 mr-2"></i>Alertes IA en attente de validation</h2>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">3 alertes</span>
                     </div>
                     <div class="p-6">
                         <div class="space-y-4">
-                            <div class="flex items-start p-4 bg-rose-50 rounded-xl border-l-4 border-rose-500">
-                                <i class="fas fa-exclamation-triangle text-rose-500 mt-1 mr-3"></i>
+                            <div class="flex items-start p-4 bg-blue-50 rounded-xl border-l-4 border-rose-500">
+                                <i class="fas fa-exclamation-triangle text-blue-500 mt-1 mr-3"></i>
                                 <div class="flex-1">
                                     <h4 class="font-semibold text-rose-800">Anomalie de performance détectée</h4>
-                                    <p class="text-sm text-rose-600 mt-1">Athlète #12345 - Amélioration de 15% sur 100m en 2 semaines</p>
+                                    <p class="text-sm text-blue-600 mt-1">Athlète #12345 - Amélioration de 15% sur 100m en 2 semaines</p>
                                     <div class="flex gap-2 mt-3">
-                                        <button class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-sm font-medium">Valider alerte</button>
+                                        <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Valider alerte</button>
                                         <button class="px-3 py-1 bg-slate-100 text-slate-700 rounded-lg text-sm font-medium">Faux positif</button>
                                     </div>
                                 </div>

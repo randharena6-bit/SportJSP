@@ -36,13 +36,13 @@
         <aside class="w-64 bg-white border-r border-secondary-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-secondary-800">SPORT<span class="text-primary-600">CONNECT</span></span>
                 </div>
-                <div class="mb-6 p-4 bg-amber-50 rounded-xl">
-                    <p class="text-xs text-amber-600 font-semibold uppercase tracking-wider mb-1">Fédération</p>
+                <div class="mb-6 p-4 bg-blue-50 rounded-xl">
+                    <p class="text-xs text-blue-600 font-semibold uppercase tracking-wider mb-1">Fédération</p>
                     <p class="font-semibold text-secondary-800">Fédération Malgache d'Athlétisme</p>
                     <p class="text-xs text-secondary-500 mt-1">Administrateur: M. Rabe</p>
                 </div>
@@ -72,7 +72,7 @@
                         <button class="relative p-2 text-secondary-400 hover:text-secondary-600 transition"><i class="fas fa-bell text-xl"></i><span class="absolute top-0 right-0 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">5</span></button>
                         <div class="h-8 w-px bg-secondary-200"></div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://ui-avatars.com/api/?name=Admin+FMA&background=f59e0b&color=fff" class="w-10 h-10 rounded-full border-2 border-amber-200">
+                            <img src="https://ui-avatars.com/api/?name=Admin+FMA&background=f59e0b&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
                             <span class="font-medium text-secondary-700">M. Rabe</span>
                         </div>
                     </div>
@@ -85,31 +85,31 @@
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
                             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-users text-blue-600 text-xl"></i></div>
-                            <span class="text-green-500 text-sm font-medium">+12% <i class="fas fa-arrow-up"></i></span>
+                            <span class="text-blue-500 text-sm font-medium">+12% <i class="fas fa-arrow-up"></i></span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Athlètes licenciés</h3>
                         <p class="text-2xl font-bold text-secondary-800">1,247</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center"><i class="fas fa-building text-amber-600 text-xl"></i></div>
-                            <span class="text-green-500 text-sm font-medium">+3 <i class="fas fa-arrow-up"></i></span>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-building text-blue-600 text-xl"></i></div>
+                            <span class="text-blue-500 text-sm font-medium">+3 <i class="fas fa-arrow-up"></i></span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Clubs affiliés</h3>
                         <p class="text-2xl font-bold text-secondary-800">42</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center"><i class="fas fa-id-card text-green-600 text-xl"></i></div>
-                            <span class="text-green-500 text-sm font-medium">95% <i class="fas fa-check"></i></span>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-id-card text-blue-600 text-xl"></i></div>
+                            <span class="text-blue-500 text-sm font-medium">95% <i class="fas fa-check"></i></span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Licences actives</h3>
                         <p class="text-2xl font-bold text-secondary-800">1,185</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center"><i class="fas fa-money-bill-wave text-purple-600 text-xl"></i></div>
-                            <span class="text-green-500 text-sm font-medium">+8% <i class="fas fa-arrow-up"></i></span>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-money-bill-wave text-blue-600 text-xl"></i></div>
+                            <span class="text-blue-500 text-sm font-medium">+8% <i class="fas fa-arrow-up"></i></span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Recettes licences</h3>
                         <p class="text-2xl font-bold text-secondary-800">32.4M Ar</p>
@@ -128,8 +128,8 @@
                         <!-- Pending Approvals -->
                         <div class="bg-white rounded-2xl shadow-sm">
                             <div class="p-6 border-b border-secondary-100 flex items-center justify-between">
-                                <h2 class="text-lg font-bold text-secondary-800"><i class="fas fa-clock text-amber-500 mr-2"></i>Demandes en attente</h2>
-                                <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">12 en attente</span>
+                                <h2 class="text-lg font-bold text-secondary-800"><i class="fas fa-clock text-blue-500 mr-2"></i>Demandes en attente</h2>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">12 en attente</span>
                             </div>
                             <div class="overflow-x-auto">
                                 <table class="w-full">
@@ -152,7 +152,7 @@
                                             <td class="py-4 px-6 text-secondary-700">Nouvelle licence Senior</td>
                                             <td class="py-4 px-6 text-secondary-500">Aujourd'hui</td>
                                             <td class="py-4 px-6">
-                                                <button class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-sm font-medium mr-2 hover:bg-green-200"><i class="fas fa-check mr-1"></i>Valider</button>
+                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium mr-2 hover:bg-green-200"><i class="fas fa-check mr-1"></i>Valider</button>
                                                 <button class="px-3 py-1 bg-red-100 text-red-700 rounded-lg text-sm font-medium hover:bg-red-200"><i class="fas fa-times mr-1"></i>Rejeter</button>
                                             </td>
                                         </tr>
@@ -166,7 +166,7 @@
                                             <td class="py-4 px-6 text-secondary-700">Renouvellement Junior</td>
                                             <td class="py-4 px-6 text-secondary-500">Hier</td>
                                             <td class="py-4 px-6">
-                                                <button class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-sm font-medium mr-2 hover:bg-green-200"><i class="fas fa-check mr-1"></i>Valider</button>
+                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium mr-2 hover:bg-green-200"><i class="fas fa-check mr-1"></i>Valider</button>
                                                 <button class="px-3 py-1 bg-red-100 text-red-700 rounded-lg text-sm font-medium hover:bg-red-200"><i class="fas fa-times mr-1"></i>Rejeter</button>
                                             </td>
                                         </tr>
@@ -187,7 +187,7 @@
                                 <div class="space-y-3">
                                     <div class="p-3 bg-secondary-50 rounded-xl">
                                         <div class="flex items-center justify-between mb-2">
-                                            <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">En préparation</span>
+                                            <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">En préparation</span>
                                             <span class="text-xs text-secondary-500">Dans 10 jours</span>
                                         </div>
                                         <h4 class="font-semibold text-secondary-800">Championnat National</h4>
@@ -195,7 +195,7 @@
                                     </div>
                                     <div class="p-3 bg-secondary-50 rounded-xl">
                                         <div class="flex items-center justify-between mb-2">
-                                            <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs font-medium">Planification</span>
+                                            <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Planification</span>
                                             <span class="text-xs text-secondary-500">Juin 2025</span>
                                         </div>
                                         <h4 class="font-semibold text-secondary-800">Meeting International</h4>
@@ -234,8 +234,8 @@
                                             <p class="text-xs text-secondary-500">Athlètes sans certificat médical</p>
                                         </div>
                                     </div>
-                                    <div class="flex items-start p-3 bg-amber-50 rounded-xl">
-                                        <i class="fas fa-exclamation-circle text-amber-500 mt-1 mr-3"></i>
+                                    <div class="flex items-start p-3 bg-blue-50 rounded-xl">
+                                        <i class="fas fa-exclamation-circle text-blue-500 mt-1 mr-3"></i>
                                         <div>
                                             <p class="text-sm font-medium text-secondary-800">Anomalie détectée</p>
                                             <p class="text-xs text-secondary-500">Performance suspecte - IA Alert</p>

@@ -101,7 +101,7 @@
                                 <h2 class="text-2xl font-bold text-secondary-800">Jean Rakoto</h2>
                                 <p class="text-secondary-500">Athlète - Athlétisme | 100m, 200m, Relais</p>
                                 <div class="flex items-center mt-2 space-x-4">
-                                    <span class="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                                    <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
                                         <i class="fas fa-check-circle mr-1"></i>Licence Active
                                     </span>
                                     <span class="inline-flex items-center px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
@@ -175,7 +175,7 @@
                                     <h5 class="font-semibold text-secondary-800">Club Athlétisme Antananarivo</h5>
                                     <p class="text-sm text-secondary-500">Membre depuis 2019</p>
                                 </div>
-                                <span class="ml-auto px-3 py-1 bg-green-100 text-green-700 rounded-lg text-sm font-medium">Actif</span>
+                                <span class="ml-auto px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Actif</span>
                             </div>
                         </div>
                     </div>
@@ -192,9 +192,9 @@
 
                         <h4 class="font-semibold text-secondary-800 mb-4">Palmarès</h4>
                         <div class="space-y-4">
-                            <div class="flex items-center p-4 bg-amber-50 rounded-xl border-l-4 border-amber-400">
-                                <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
-                                    <i class="fas fa-medal text-amber-600 text-xl"></i>
+                            <div class="flex items-center p-4 bg-blue-50 rounded-xl border-l-4 border-amber-400">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-medal text-blue-600 text-xl"></i>
                                 </div>
                                 <div class="flex-1">
                                     <h5 class="font-semibold text-secondary-800">Championnat National 2024</h5>
@@ -232,7 +232,7 @@
                                 <i class="fas fa-id-card text-4xl text-secondary-400 mb-3"></i>
                                 <h5 class="font-medium text-secondary-700">Carte d'identité</h5>
                                 <p class="text-sm text-secondary-500">PDF, JPG (max 5MB)</p>
-                                <span class="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium mt-2">
+                                <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mt-2">
                                     <i class="fas fa-check mr-1"></i>Document vérifié
                                 </span>
                             </div>
@@ -240,7 +240,7 @@
                                 <i class="fas fa-file-medical text-4xl text-secondary-400 mb-3"></i>
                                 <h5 class="font-medium text-secondary-700">Certificat médical</h5>
                                 <p class="text-sm text-secondary-500">PDF (max 5MB)</p>
-                                <span class="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium mt-2">
+                                <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mt-2">
                                     <i class="fas fa-check mr-1"></i>Document vérifié
                                 </span>
                             </div>
@@ -248,7 +248,7 @@
                                 <i class="fas fa-camera text-4xl text-secondary-400 mb-3"></i>
                                 <h5 class="font-medium text-secondary-700">Photo d'identité</h5>
                                 <p class="text-sm text-secondary-500">JPG, PNG (max 2MB)</p>
-                                <span class="inline-flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium mt-2">
+                                <span class="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mt-2">
                                     <i class="fas fa-check mr-1"></i>Document vérifié
                                 </span>
                             </div>
@@ -271,15 +271,15 @@
                                 <div class="text-sm text-secondary-500">Compétitions</div>
                             </div>
                             <div class="bg-secondary-50 rounded-xl p-4 text-center">
-                                <div class="text-3xl font-bold text-amber-600">12</div>
+                                <div class="text-3xl font-bold text-blue-600">12</div>
                                 <div class="text-sm text-secondary-500">Médailles</div>
                             </div>
                             <div class="bg-secondary-50 rounded-xl p-4 text-center">
-                                <div class="text-3xl font-bold text-green-600">5</div>
+                                <div class="text-3xl font-bold text-blue-600">5</div>
                                 <div class="text-sm text-secondary-500">Records perso</div>
                             </div>
                             <div class="bg-secondary-50 rounded-xl p-4 text-center">
-                                <div class="text-3xl font-bold text-purple-600">87.5</div>
+                                <div class="text-3xl font-bold text-blue-600">87.5</div>
                                 <div class="text-sm text-secondary-500">Score Talent</div>
                             </div>
                         </div>
@@ -298,13 +298,13 @@
                                         <td class="py-3 px-4 text-secondary-700">2024-2025</td>
                                         <td class="py-3 px-4 text-secondary-700">100m</td>
                                         <td class="py-3 px-4 font-semibold text-primary-600">10.45s</td>
-                                        <td class="py-3 px-4"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">#1 National</span></td>
+                                        <td class="py-3 px-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">#1 National</span></td>
                                     </tr>
                                     <tr class="border-b border-secondary-100">
                                         <td class="py-3 px-4 text-secondary-700">2024-2025</td>
                                         <td class="py-3 px-4 text-secondary-700">200m</td>
                                         <td class="py-3 px-4 font-semibold text-primary-600">21.32s</td>
-                                        <td class="py-3 px-4"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-sm">#2 National</span></td>
+                                        <td class="py-3 px-4"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">#2 National</span></td>
                                     </tr>
                                     <tr class="border-b border-secondary-100">
                                         <td class="py-3 px-4 text-secondary-700">2023-2024</td>

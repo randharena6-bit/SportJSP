@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -55,9 +55,9 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="border border-slate-200 rounded-xl p-4">
                             <div class="flex items-center mb-3">
-                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-mobile-alt text-green-600"></i></div>
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-mobile-alt text-blue-600"></i></div>
                                 <span class="font-semibold text-slate-800">Mvola</span>
-                                <span class="ml-auto px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Actif</span>
+                                <span class="ml-auto px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Actif</span>
                             </div>
                             <label class="block text-sm text-slate-600 mb-1">Clé API</label>
                             <input type="password" value="mvola_api_key_xxx" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm">
@@ -66,7 +66,7 @@
                             <div class="flex items-center mb-3">
                                 <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-mobile-alt text-orange-600"></i></div>
                                 <span class="font-semibold text-slate-800">Orange Money</span>
-                                <span class="ml-auto px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Actif</span>
+                                <span class="ml-auto px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Actif</span>
                             </div>
                             <label class="block text-sm text-slate-600 mb-1">Clé API</label>
                             <input type="password" value="orange_api_key_xxx" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm">
@@ -75,7 +75,7 @@
                             <div class="flex items-center mb-3">
                                 <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-mobile-alt text-red-600"></i></div>
                                 <span class="font-semibold text-slate-800">Airtel Money</span>
-                                <span class="ml-auto px-2 py-1 bg-green-100 text-green-700 rounded text-xs">Actif</span>
+                                <span class="ml-auto px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Actif</span>
                             </div>
                             <label class="block text-sm text-slate-600 mb-1">Clé API</label>
                             <input type="password" value="airtel_api_key_xxx" class="w-full px-3 py-2 border border-slate-200 rounded-lg text-sm">
@@ -102,7 +102,7 @@
                         </div>
                         <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                             <div class="flex items-center">
-                                <i class="fas fa-futbol text-emerald-500 mr-3"></i>
+                                <i class="fas fa-futbol text-blue-500 mr-3"></i>
                                 <span class="font-medium text-slate-700">Football</span>
                             </div>
                             <div class="flex items-center gap-4">

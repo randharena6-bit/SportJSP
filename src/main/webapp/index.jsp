@@ -190,7 +190,7 @@
                 </a>
                 <!-- Coach Card -->
                 <a href="login.jsp?role=coach" class="role-card rounded-2xl p-8 text-center card-hover group">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-emerald-400 to-emerald-600 flex items-center justify-center group-hover:scale-110 transition">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center group-hover:scale-110 transition">
                         <i class="fas fa-dumbbell text-white text-3xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-secondary-800 mb-2">Entraîneur</h3>
@@ -205,7 +205,7 @@
                 </a>
                 <!-- Federation Card -->
                 <a href="login.jsp?role=federation" class="role-card rounded-2xl p-8 text-center card-hover group">
-                    <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center group-hover:scale-110 transition">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center group-hover:scale-110 transition">
                         <i class="fas fa-landmark text-white text-3xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-secondary-800 mb-2">Fédération</h3>
@@ -253,15 +253,15 @@
                     <p class="text-secondary-500">Gestion complète des licences avec QR code et paiement Mobile Money</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center mb-6">
-                        <i class="fas fa-trophy text-green-600 text-xl"></i>
+                    <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-trophy text-blue-600 text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-secondary-800 mb-3">Compétitions</h3>
                     <p class="text-secondary-500">Calendrier national, inscriptions et résultats en temps réel</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-line text-purple-600 text-xl"></i>
+                    <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-blue-600 text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-secondary-800 mb-3">Analytics IA</h3>
                     <p class="text-secondary-500">Talent Scoring System et détection des performances exceptionnelles</p>
@@ -274,8 +274,8 @@
                     <p class="text-secondary-500">Suivi médical biométrique avec dossier numérique sécurisé</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-xl bg-amber-100 flex items-center justify-center mb-6">
-                        <i class="fas fa-video text-amber-600 text-xl"></i>
+                    <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-video text-blue-600 text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-secondary-800 mb-3">Streaming & E-sport</h3>
                     <p class="text-secondary-500">Diffusion live des compétitions et tournois e-sport</p>

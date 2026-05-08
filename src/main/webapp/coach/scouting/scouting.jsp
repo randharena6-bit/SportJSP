@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -44,7 +44,7 @@
                         <p class="text-slate-500 text-sm">Évaluation des jeunes talents - Mode offline disponible</p>
                     </div>
                     <div class="flex gap-3">
-                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm"><i class="fas fa-wifi mr-1"></i>Connecté</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm"><i class="fas fa-wifi mr-1"></i>Connecté</span>
                         <button class="px-4 py-2 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700"><i class="fas fa-plus mr-2"></i>Nouvelle évaluation</button>
                     </div>
                 </div>
@@ -53,7 +53,7 @@
             <main class="p-8">
                 <!-- Evaluation Form -->
                 <div class="bg-white rounded-2xl shadow-sm p-6 mb-8">
-                    <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-clipboard-check text-emerald-500 mr-2"></i>Formulaire d'évaluation standardisé</h2>
+                    <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-clipboard-check text-blue-500 mr-2"></i>Formulaire d'évaluation standardisé</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-2">Nom du jeune athlète</label>
@@ -113,13 +113,13 @@
                 </div>
 
                 <!-- Pending Sync -->
-                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
                     <div class="flex items-center justify-between">
                         <div class="flex items-center">
-                            <i class="fas fa-sync-alt text-amber-500 mr-3"></i>
+                            <i class="fas fa-sync-alt text-blue-500 mr-3"></i>
                             <div>
-                                <h4 class="font-semibold text-amber-800">3 évaluations en attente de synchronisation</h4>
-                                <p class="text-sm text-amber-600">Enregistrées en mode offline - Connexion requise pour transmission</p>
+                                <h4 class="font-semibold text-blue-800">3 évaluations en attente de synchronisation</h4>
+                                <p class="text-sm text-blue-600">Enregistrées en mode offline - Connexion requise pour transmission</p>
                             </div>
                         </div>
                         <button class="px-4 py-2 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700">Synchroniser maintenant</button>

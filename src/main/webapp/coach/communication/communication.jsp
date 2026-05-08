@@ -19,7 +19,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -57,13 +57,13 @@
                         </div>
                         <div class="p-2">
                             <div class="space-y-1">
-                                <div class="flex items-center p-3 bg-emerald-50 rounded-xl cursor-pointer">
+                                <div class="flex items-center p-3 bg-blue-50 rounded-xl cursor-pointer">
                                     <img src="https://ui-avatars.com/api/?name=Jean+Rakoto&background=3b82f6&color=fff" class="w-12 h-12 rounded-full mr-3">
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Rakoto Jean</h4>
                                         <p class="text-sm text-slate-500">Athlète - 100m</p>
                                     </div>
-                                    <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                                    <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
                                 </div>
                                 <div class="flex items-center p-3 hover:bg-slate-50 rounded-xl cursor-pointer">
                                     <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=10b981&color=fff" class="w-12 h-12 rounded-full mr-3">
@@ -86,7 +86,7 @@
                                         <h4 class="font-semibold text-slate-800">Fédération FMA</h4>
                                         <p class="text-sm text-slate-500">Direction technique</p>
                                     </div>
-                                    <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs">1</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">1</span>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,7 @@
                             <img src="https://ui-avatars.com/api/?name=Jean+Rakoto&background=3b82f6&color=fff" class="w-10 h-10 rounded-full mr-3">
                             <div>
                                 <h4 class="font-semibold text-slate-800">Rakoto Jean</h4>
-                                <p class="text-xs text-green-600">En ligne</p>
+                                <p class="text-xs text-blue-600">En ligne</p>
                             </div>
                         </div>
                         <div class="flex-1 p-4 overflow-y-auto">
@@ -110,7 +110,7 @@
                                     </div>
                                 </div>
                                 <div class="flex justify-end">
-                                    <div class="message-bubble bg-emerald-500 text-white rounded-2xl rounded-tr-none p-3">
+                                    <div class="message-bubble bg-blue-500 text-white rounded-2xl rounded-tr-none p-3">
                                         <p>Excellent travail Jean ! On maintient le programme actuel, tu es sur la bonne voie pour les championnats.</p>
                                         <span class="text-xs text-emerald-100 mt-1">10:35</span>
                                     </div>

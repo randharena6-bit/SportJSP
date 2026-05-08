@@ -20,7 +20,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -46,8 +46,8 @@
                         <h1 class="text-2xl font-bold text-slate-800">Infrastructure & DevOps</h1>
                         <p class="text-slate-500 text-sm">Monitoring serveurs, sauvegardes, CDN</p>
                     </div>
-                    <div class="flex items-center px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">
-                        <span class="w-2 h-2 bg-green-500 rounded-full mr-2 pulse-dot"></span>
+                    <div class="flex items-center px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">
+                        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2 pulse-dot"></span>
                         Opérationnel
                     </div>
                 </div>
@@ -62,22 +62,22 @@
                         <p class="text-2xl font-bold text-slate-800">8/8</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-database text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-database text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Dernière backup</h3>
                         <p class="text-2xl font-bold text-slate-800">14:00</p>
-                        <p class="text-xs text-green-500">RPO: 1h atteint</p>
+                        <p class="text-xs text-blue-500">RPO: 1h atteint</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-network-wired text-purple-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-network-wired text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Bande passante</h3>
                         <p class="text-2xl font-bold text-slate-800">45%</p>
                         <p class="text-xs text-slate-500">234 Mbps / 500 Mbps</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-users text-amber-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-users text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Utilisateurs actifs</h3>
                         <p class="text-2xl font-bold text-slate-800">1,234</p>
-                        <p class="text-xs text-green-500">+12% vs hier</p>
+                        <p class="text-xs text-blue-500">+12% vs hier</p>
                     </div>
                 </div>
 
@@ -96,24 +96,24 @@
                             </div>
                             <div>
                                 <div class="flex justify-between text-sm mb-1"><span class="text-slate-600">Stockage</span><span class="font-semibold text-slate-800">78%</span></div>
-                                <div class="w-full h-2 bg-slate-200 rounded-full"><div class="h-2 bg-amber-500 rounded-full" style="width: 78%"></div></div>
+                                <div class="w-full h-2 bg-slate-200 rounded-full"><div class="h-2 bg-blue-500 rounded-full" style="width: 78%"></div></div>
                             </div>
                         </div>
                     </div>
                     <div class="bg-white rounded-2xl shadow-sm p-6">
-                        <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-cloud text-green-500 mr-2"></i>Sauvegardes & CDN</h2>
+                        <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-cloud text-blue-500 mr-2"></i>Sauvegardes & CDN</h2>
                         <div class="space-y-4">
                             <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                                 <div class="flex items-center"><i class="fas fa-database text-blue-500 mr-3"></i><span class="text-slate-700">Backup Database</span></div>
-                                <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">OK - 14:00</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">OK - 14:00</span>
                             </div>
                             <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                                 <div class="flex items-center"><i class="fas fa-file-archive text-blue-500 mr-3"></i><span class="text-slate-700">Backup Fichiers</span></div>
-                                <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">OK - 13:30</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">OK - 13:30</span>
                             </div>
                             <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                                 <div class="flex items-center"><i class="fas fa-globe text-purple-500 mr-3"></i><span class="text-slate-700">CDN Cloudflare</span></div>
-                                <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Actif</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Actif</span>
                             </div>
                         </div>
                     </div>

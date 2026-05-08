@@ -124,8 +124,8 @@
                     <!-- Notification 3 - Unread -->
                     <div class="bg-white rounded-xl shadow-sm p-6 notification-unread">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-check-circle text-blue-600 text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <div class="flex items-center justify-between">
@@ -145,8 +145,8 @@
                     <!-- Notification 4 - Read -->
                     <div class="bg-white rounded-xl shadow-sm p-6">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-chart-line text-purple-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-chart-line text-blue-600 text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <div class="flex items-center justify-between">
@@ -161,8 +161,8 @@
                     <!-- Notification 5 - Read -->
                     <div class="bg-white rounded-xl shadow-sm p-6">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-envelope text-amber-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-envelope text-blue-600 text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <div class="flex items-center justify-between">
@@ -196,8 +196,8 @@
                     <!-- Notification 7 - Read -->
                     <div class="bg-white rounded-xl shadow-sm p-6">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-video text-rose-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-video text-blue-600 text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <div class="flex items-center justify-between">

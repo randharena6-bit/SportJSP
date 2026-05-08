@@ -49,8 +49,8 @@
                         <div>
                             <p class="font-semibold text-secondary-800 text-sm">Jean Rakoto</p>
                             <p class="text-xs text-secondary-500">Athlète - Athlétisme</p>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800 mt-1">
-                                <span class="w-1.5 h-1.5 bg-green-500 rounded-full mr-1"></span>Licence Active
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-green-800 mt-1">
+                                <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-1"></span>Licence Active
                             </span>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                                 <i class="fas fa-id-card text-blue-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium"><i class="fas fa-check mr-1"></i>Active</span>
+                            <span class="text-blue-500 text-sm font-medium"><i class="fas fa-check mr-1"></i>Active</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Statut Licence</h3>
                         <p class="text-2xl font-bold text-secondary-800">2024-2025</p>
@@ -135,10 +135,10 @@
 
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
-                                <i class="fas fa-trophy text-amber-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-trophy text-blue-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium">+2 ce mois</span>
+                            <span class="text-blue-500 text-sm font-medium">+2 ce mois</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Compétitions</h3>
                         <p class="text-2xl font-bold text-secondary-800">24</p>
@@ -147,10 +147,10 @@
 
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                                <i class="fas fa-medal text-purple-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-medal text-blue-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium">Top 10%</span>
+                            <span class="text-blue-500 text-sm font-medium">Top 10%</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Score de Talent</h3>
                         <p class="text-2xl font-bold text-secondary-800">Elite</p>
@@ -159,10 +159,10 @@
 
                     <div class="bg-white rounded-2xl p-6 shadow-sm card-hover">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                                <i class="fas fa-heartbeat text-green-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-heartbeat text-blue-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium">Optimal</span>
+                            <span class="text-blue-500 text-sm font-medium">Optimal</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Forme Physique</h3>
                         <p class="text-2xl font-bold text-secondary-800">92%</p>
@@ -192,7 +192,7 @@
                                             <h4 class="font-semibold text-secondary-800">Championnat National d'Athlétisme</h4>
                                             <p class="text-sm text-secondary-500"><i class="fas fa-map-marker-alt mr-1"></i>Stade Mahamasina, Antananarivo</p>
                                         </div>
-                                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-sm font-medium">Inscrit</span>
+                                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Inscrit</span>
                                     </div>
                                     <div class="flex items-center p-4 bg-secondary-50 rounded-xl">
                                         <div class="w-16 h-16 bg-secondary-100 rounded-xl flex flex-col items-center justify-center mr-4">
@@ -283,7 +283,7 @@
                                         </div>
                                     </div>
                                     <div class="flex items-start space-x-3 p-3 bg-green-50 rounded-xl border-l-4 border-green-500">
-                                        <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                                        <i class="fas fa-check-circle text-blue-500 mt-1"></i>
                                         <div>
                                             <p class="text-sm font-medium text-secondary-800">Paiement confirmé</p>
                                             <p class="text-xs text-secondary-500">Licence 2024-2025 payée</p>
@@ -305,8 +305,8 @@
                                     <span class="font-medium text-secondary-700">Renouveler ma licence</span>
                                 </a>
                                 <a href="competitions/competitions.jsp" class="flex items-center p-3 bg-secondary-50 rounded-xl hover:bg-primary-50 transition group">
-                                    <div class="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-amber-200 transition">
-                                        <i class="fas fa-trophy text-amber-600"></i>
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-blue-200 transition">
+                                        <i class="fas fa-trophy text-blue-600"></i>
                                     </div>
                                     <span class="font-medium text-secondary-700">Trouver une compétition</span>
                                 </a>

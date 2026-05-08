@@ -20,7 +20,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
@@ -58,7 +58,7 @@
                     <div class="bg-white rounded-2xl shadow-sm p-6">
                         <div class="flex items-center justify-between mb-4">
                             <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-running text-blue-600 text-2xl"></i></div>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Conforme</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Conforme</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800">Club Athlétisme Antananarivo</h3>
                         <p class="text-slate-500 text-sm mb-4">CAA • Créé en 1985</p>
@@ -76,15 +76,15 @@
                     <!-- Club Card 2 -->
                     <div class="bg-white rounded-2xl shadow-sm p-6">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-16 h-16 bg-emerald-100 rounded-xl flex items-center justify-center"><i class="fas fa-medal text-emerald-600 text-2xl"></i></div>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Conforme</span>
+                            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-medal text-blue-600 text-2xl"></i></div>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Conforme</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800">Club Olympique de Toamasina</h3>
                         <p class="text-slate-500 text-sm mb-4">COT • Créé en 1992</p>
                         <div class="grid grid-cols-3 gap-4 mb-4 text-center">
-                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-emerald-600">98</div><div class="text-xs text-slate-500">Athlètes</div></div>
-                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-emerald-600">6</div><div class="text-xs text-slate-500">Staff</div></div>
-                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-emerald-600">8</div><div class="text-xs text-slate-500">Entraîneurs</div></div>
+                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">98</div><div class="text-xs text-slate-500">Athlètes</div></div>
+                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">6</div><div class="text-xs text-slate-500">Staff</div></div>
+                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">8</div><div class="text-xs text-slate-500">Entraîneurs</div></div>
                         </div>
                         <div class="flex gap-2">
                             <button class="flex-1 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-eye mr-1"></i>Détails</button>
@@ -95,19 +95,19 @@
                     <!-- Club Card 3 -->
                     <div class="bg-white rounded-2xl shadow-sm p-6">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-16 h-16 bg-amber-100 rounded-xl flex items-center justify-center"><i class="fas fa-star text-amber-600 text-2xl"></i></div>
-                            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm font-medium">Action requise</span>
+                            <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center"><i class="fas fa-star text-blue-600 text-2xl"></i></div>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Action requise</span>
                         </div>
                         <h3 class="text-lg font-bold text-slate-800">AS Sportive d'Antsirabe</h3>
                         <p class="text-slate-500 text-sm mb-4">ASSA • Créé en 2005</p>
                         <div class="grid grid-cols-3 gap-4 mb-4 text-center">
-                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-amber-600">67</div><div class="text-xs text-slate-500">Athlètes</div></div>
-                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-amber-600">4</div><div class="text-xs text-slate-500">Staff</div></div>
+                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">67</div><div class="text-xs text-slate-500">Athlètes</div></div>
+                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">4</div><div class="text-xs text-slate-500">Staff</div></div>
                             <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-red-600">2</div><div class="text-xs text-slate-500">Entraîneurs</div></div>
                         </div>
                         <div class="flex gap-2">
                             <button class="flex-1 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-eye mr-1"></i>Détails</button>
-                            <button class="flex-1 py-2 bg-amber-100 text-amber-700 rounded-lg font-medium hover:bg-amber-200"><i class="fas fa-exclamation-triangle mr-1"></i>Vérifier</button>
+                            <button class="flex-1 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-exclamation-triangle mr-1"></i>Vérifier</button>
                         </div>
                     </div>
                 </div>

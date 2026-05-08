@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -86,13 +86,13 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-rose-100 text-rose-700 rounded-lg text-sm font-medium">Admin Système</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Admin Système</span></td>
                                     <td class="py-4 px-6 text-slate-600">Ministère du Numérique</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Actif</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Actif</span></td>
                                     <td class="py-4 px-6 text-slate-600">Il y a 5 minutes</td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
-                                        <button class="text-rose-600 hover:text-rose-700"><i class="fas fa-ban"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-700"><i class="fas fa-ban"></i></button>
                                     </td>
                                 </tr>
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
@@ -105,13 +105,13 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded-lg text-sm font-medium">Fédération</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Fédération</span></td>
                                     <td class="py-4 px-6 text-slate-600">FMA - Athlétisme</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Actif</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Actif</span></td>
                                     <td class="py-4 px-6 text-slate-600">Il y a 2 heures</td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
-                                        <button class="text-rose-600 hover:text-rose-700"><i class="fas fa-ban"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-700"><i class="fas fa-ban"></i></button>
                                     </td>
                                 </tr>
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
@@ -124,13 +124,13 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded-lg text-sm font-medium">Entraîneur</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Entraîneur</span></td>
                                     <td class="py-4 px-6 text-slate-600">CAA - Antananarivo</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm">Actif</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm">Actif</span></td>
                                     <td class="py-4 px-6 text-slate-600">Hier</td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3"><i class="fas fa-edit"></i></button>
-                                        <button class="text-rose-600 hover:text-rose-700"><i class="fas fa-ban"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-700"><i class="fas fa-ban"></i></button>
                                     </td>
                                 </tr>
                             </tbody>

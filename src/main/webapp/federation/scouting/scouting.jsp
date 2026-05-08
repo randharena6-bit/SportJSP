@@ -22,7 +22,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
@@ -50,7 +50,7 @@
                         <p class="text-slate-500 text-sm">Identification des jeunes talents avec IA</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"><i class="fas fa-robot mr-1"></i>IA Activée</span>
+                        <span class="px-3 py-1 bg-blue-100 text-purple-700 rounded-full text-sm font-medium"><i class="fas fa-robot mr-1"></i>IA Activée</span>
                         <button class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition"><i class="fas fa-plus mr-2"></i>Nouvelle évaluation</button>
                     </div>
                 </div>
@@ -69,14 +69,14 @@
                                 <p class="text-purple-100">L'IA a identifié un athlète avec un potentiel "Elite" - Score: 92.4</p>
                             </div>
                         </div>
-                        <button class="px-6 py-3 bg-white text-purple-600 rounded-xl font-semibold hover:bg-purple-50 transition">Voir le profil</button>
+                        <button class="px-6 py-3 bg-white text-blue-600 rounded-xl font-semibold hover:bg-purple-50 transition">Voir le profil</button>
                     </div>
                 </div>
 
                 <!-- Talent Stats -->
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-star text-purple-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-star text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Talents Elite</h3>
                         <p class="text-2xl font-bold text-slate-800">24</p>
                     </div>
@@ -86,12 +86,12 @@
                         <p class="text-2xl font-bold text-slate-800">156</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-eye text-amber-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-eye text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">À suivre</h3>
                         <p class="text-2xl font-bold text-slate-800">342</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-chart-line text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-chart-line text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Évaluations ce mois</h3>
                         <p class="text-2xl font-bold text-slate-800">89</p>
                     </div>
@@ -100,7 +100,7 @@
                 <!-- Top Talents -->
                 <div class="bg-white rounded-2xl shadow-sm mb-8">
                     <div class="p-6 border-b border-slate-100 flex items-center justify-between">
-                        <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-crown text-amber-500 mr-2"></i>Top Talents Identifiés</h2>
+                        <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-crown text-blue-500 mr-2"></i>Top Talents Identifiés</h2>
                         <div class="flex gap-2">
                             <select class="px-3 py-2 border border-slate-200 rounded-lg text-sm"><option>Tous les âges</option><option>14-16 ans</option><option>17-19 ans</option></select>
                             <select class="px-3 py-2 border border-slate-200 rounded-lg text-sm"><option>Toutes disciplines</option><option>100m</option><option>200m</option></select>
@@ -115,13 +115,13 @@
                                         <h4 class="font-bold text-slate-800">Andria Koto</h4>
                                         <p class="text-sm text-slate-500">16 ans • CAA</p>
                                     </div>
-                                    <span class="ml-auto px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm font-bold">92.4</span>
+                                    <span class="ml-auto px-3 py-1 bg-blue-100 text-purple-700 rounded-full text-sm font-bold">92.4</span>
                                 </div>
                                 <div class="space-y-2 mb-4">
                                     <div class="flex justify-between text-sm"><span class="text-slate-500">100m</span><span class="font-semibold text-slate-800">10.85s</span></div>
                                     <div class="flex justify-between text-sm"><span class="text-slate-500">200m</span><span class="font-semibold text-slate-800">22.15s</span></div>
                                 </div>
-                                <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-lg text-sm font-medium">Catégorie: Elite</span>
+                                <span class="px-3 py-1 bg-blue-100 text-purple-700 rounded-lg text-sm font-medium">Catégorie: Elite</span>
                             </div>
                             <div class="talent-card border border-slate-200 rounded-xl p-4">
                                 <div class="flex items-center mb-4">
@@ -145,7 +145,7 @@
                                         <h4 class="font-bold text-slate-800">Ravao Marie</h4>
                                         <p class="text-sm text-slate-500">15 ans • ASSA</p>
                                     </div>
-                                    <span class="ml-auto px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-bold">85.2</span>
+                                    <span class="ml-auto px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-bold">85.2</span>
                                 </div>
                                 <div class="space-y-2 mb-4">
                                     <div class="flex justify-between text-sm"><span class="text-slate-500">800m</span><span class="font-semibold text-slate-800">2:15.45</span></div>

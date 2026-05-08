@@ -93,7 +93,7 @@
                     <div class="flex flex-col md:flex-row items-center justify-between">
                         <div class="flex-1">
                             <div class="flex items-center mb-4">
-                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium mr-3">Active</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mr-3">Active</span>
                                 <span class="text-secondary-500 text-sm">Saison 2024-2025</span>
                             </div>
                             <h2 class="text-2xl font-bold text-secondary-800 mb-2">Licence Athlétisme - Senior</h2>
@@ -152,7 +152,7 @@
                                     <td class="py-4 px-6 text-secondary-700">Athlétisme</td>
                                     <td class="py-4 px-6 text-secondary-700">Senior</td>
                                     <td class="py-4 px-6 text-secondary-600">01/01/24 - 31/12/25</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded-lg text-sm font-medium">Active</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium">Active</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-primary-600 hover:text-primary-700 mr-3"><i class="fas fa-download"></i></button>
                                         <button class="text-secondary-400 hover:text-secondary-600"><i class="fas fa-eye"></i></button>
@@ -225,8 +225,8 @@
                     <label class="block text-sm font-medium text-secondary-700 mb-3">Méthode de paiement Mobile Money</label>
                     <div class="grid grid-cols-3 gap-4">
                         <div class="payment-card border-2 border-secondary-200 rounded-xl p-4 text-center" onclick="selectPayment(this, 'mvola')">
-                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-2">
-                                <i class="fas fa-mobile-alt text-green-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-2">
+                                <i class="fas fa-mobile-alt text-blue-600 text-xl"></i>
                             </div>
                             <p class="font-medium text-secondary-700">Mvola</p>
                         </div>

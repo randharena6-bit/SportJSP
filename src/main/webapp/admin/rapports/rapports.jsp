@@ -19,7 +19,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -55,22 +55,22 @@
                     <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-blue-500">
                         <h3 class="text-slate-500 text-sm">Athlètes digitalisés</h3>
                         <p class="text-3xl font-bold text-slate-800">45,678</p>
-                        <p class="text-xs text-green-500"><i class="fas fa-arrow-up"></i> +18% vs 2024</p>
+                        <p class="text-xs text-blue-500"><i class="fas fa-arrow-up"></i> +18% vs 2024</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-green-500">
                         <h3 class="text-slate-500 text-sm">Fédérations actives</h3>
                         <p class="text-3xl font-bold text-slate-800">42/45</p>
-                        <p class="text-xs text-green-500">93% couverture</p>
+                        <p class="text-xs text-blue-500">93% couverture</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-purple-500">
                         <h3 class="text-slate-500 text-sm">Volume transactions</h3>
                         <p class="text-3xl font-bold text-slate-800">847.2M Ar</p>
-                        <p class="text-xs text-green-500">Année 2025</p>
+                        <p class="text-xs text-blue-500">Année 2025</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-amber-500">
                         <h3 class="text-slate-500 text-sm">Emplois créés</h3>
                         <p class="text-3xl font-bold text-slate-800">234</p>
-                        <p class="text-xs text-green-500">Directs et indirects</p>
+                        <p class="text-xs text-blue-500">Directs et indirects</p>
                     </div>
                 </div>
 
@@ -81,9 +81,9 @@
                         <div>
                             <div class="flex justify-between text-sm mb-2">
                                 <span class="text-slate-700 font-medium">Phase 1: Fondation (2024)</span>
-                                <span class="text-green-600 font-semibold">100% Complété</span>
+                                <span class="text-blue-600 font-semibold">100% Complété</span>
                             </div>
-                            <div class="w-full h-3 bg-slate-200 rounded-full"><div class="h-3 bg-green-500 rounded-full" style="width: 100%"></div></div>
+                            <div class="w-full h-3 bg-slate-200 rounded-full"><div class="h-3 bg-blue-500 rounded-full" style="width: 100%"></div></div>
                         </div>
                         <div>
                             <div class="flex justify-between text-sm mb-2">
@@ -115,14 +115,14 @@
                         <canvas id="growthChart" height="200"></canvas>
                     </div>
                     <div class="bg-white rounded-2xl shadow-sm p-6">
-                        <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-coins text-green-500 mr-2"></i>Impact économique</h2>
+                        <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-coins text-blue-500 mr-2"></i>Impact économique</h2>
                         <div class="space-y-4">
                             <div class="flex items-center justify-between p-4 bg-slate-50 rounded-xl">
                                 <div>
                                     <p class="font-semibold text-slate-800">Recettes e-sport</p>
                                     <p class="text-sm text-slate-500">Tournois et sponsors</p>
                                 </div>
-                                <span class="text-xl font-bold text-green-600">124.5M Ar</span>
+                                <span class="text-xl font-bold text-blue-600">124.5M Ar</span>
                             </div>
                             <div class="flex items-center justify-between p-4 bg-slate-50 rounded-xl">
                                 <div>
@@ -136,7 +136,7 @@
                                     <p class="font-semibold text-slate-800">Investissement DSI</p>
                                     <p class="text-sm text-slate-500">Infrastructure & dev</p>
                                 </div>
-                                <span class="text-xl font-bold text-purple-600">2.4Mds Ar</span>
+                                <span class="text-xl font-bold text-blue-600">2.4Mds Ar</span>
                             </div>
                         </div>
                     </div>

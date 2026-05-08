@@ -136,14 +136,14 @@
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 rounded text-xs font-medium">Athlétisme</span>
+                                <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Athlétisme</span>
                                 <span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded text-xs font-medium">Senior</span>
                             </div>
                             <h3 class="text-xl font-bold text-secondary-800 mb-2">Meeting International de Tamatave</h3>
                             <div class="space-y-2 text-sm text-secondary-600 mb-4">
-                                <div class="flex items-center"><i class="fas fa-calendar-alt w-5 text-emerald-500"></i>8-10 Juin 2025</div>
-                                <div class="flex items-center"><i class="fas fa-map-marker-alt w-5 text-emerald-500"></i>Stade Municipal, Toamasina</div>
-                                <div class="flex items-center"><i class="fas fa-clock w-5 text-emerald-500"></i>Clôture: 1 Juin</div>
+                                <div class="flex items-center"><i class="fas fa-calendar-alt w-5 text-blue-500"></i>8-10 Juin 2025</div>
+                                <div class="flex items-center"><i class="fas fa-map-marker-alt w-5 text-blue-500"></i>Stade Municipal, Toamasina</div>
+                                <div class="flex items-center"><i class="fas fa-clock w-5 text-blue-500"></i>Clôture: 1 Juin</div>
                             </div>
                             <div class="flex items-center justify-between pt-4 border-t border-secondary-100">
                                 <div class="text-sm">
@@ -165,7 +165,7 @@
                         </div>
                         <div class="p-6">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="px-2 py-1 bg-purple-100 text-purple-700 rounded text-xs font-medium">Athlétisme</span>
+                                <span class="px-2 py-1 bg-blue-100 text-purple-700 rounded text-xs font-medium">Athlétisme</span>
                                 <span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded text-xs font-medium">Toutes catégories</span>
                             </div>
                             <h3 class="text-xl font-bold text-secondary-800 mb-2">Coupe des Clubs</h3>
@@ -209,7 +209,7 @@
                                     <td class="py-4 px-6 text-secondary-600">12 Mars 2025</td>
                                     <td class="py-4 px-6 text-secondary-700">100m</td>
                                     <td class="py-4 px-6 font-semibold text-primary-600">10.45s (PB)</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-sm font-medium">1er</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">1er</span></td>
                                 </tr>
                                 <tr class="border-b border-secondary-100">
                                     <td class="py-4 px-6 font-medium text-secondary-800">Meeting de préparation</td>
@@ -223,7 +223,7 @@
                                     <td class="py-4 px-6 text-secondary-600">15 Mai 2024</td>
                                     <td class="py-4 px-6 text-secondary-700">100m</td>
                                     <td class="py-4 px-6 font-semibold text-secondary-700">10.62s</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-sm font-medium">1er</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm font-medium">1er</span></td>
                                 </tr>
                             </tbody>
                         </table>

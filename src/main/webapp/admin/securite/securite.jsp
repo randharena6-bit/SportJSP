@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-rose-500 to-rose-600 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-shield-alt text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -47,13 +47,13 @@
 
             <main class="p-8">
                 <!-- Security Alerts -->
-                <div class="bg-rose-50 border border-rose-200 rounded-xl p-4 mb-6 flex items-start">
-                    <i class="fas fa-exclamation-triangle text-rose-500 mt-1 mr-3"></i>
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-6 flex items-start">
+                    <i class="fas fa-exclamation-triangle text-blue-500 mt-1 mr-3"></i>
                     <div class="flex-1">
                         <h4 class="font-semibold text-rose-800">3 alertes de sécurité actives</h4>
-                        <p class="text-sm text-rose-700">Tentatives d'accès suspects détectées - Examen requis</p>
+                        <p class="text-sm text-blue-700">Tentatives d'accès suspects détectées - Examen requis</p>
                     </div>
-                    <button class="px-4 py-2 bg-rose-100 text-rose-700 rounded-lg font-medium hover:bg-rose-200">Examiner</button>
+                    <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200">Examiner</button>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -72,15 +72,15 @@
                                         <p class="text-xs text-slate-500">06/05/2025 14:32:15 • IP: 197.149.XXX.XXX</p>
                                     </div>
                                 </div>
-                                <div class="flex items-start p-3 bg-amber-50 rounded-lg">
-                                    <i class="fas fa-exclamation-circle text-amber-500 mt-1 mr-3"></i>
+                                <div class="flex items-start p-3 bg-blue-50 rounded-lg">
+                                    <i class="fas fa-exclamation-circle text-blue-500 mt-1 mr-3"></i>
                                     <div class="flex-1">
-                                        <p class="text-sm font-medium text-amber-800">Tentative échouée - Fédération Football</p>
-                                        <p class="text-xs text-amber-600">06/05/2025 14:28:42 • IP: 197.149.XXX.XXX</p>
+                                        <p class="text-sm font-medium text-blue-800">Tentative échouée - Fédération Football</p>
+                                        <p class="text-xs text-blue-600">06/05/2025 14:28:42 • IP: 197.149.XXX.XXX</p>
                                     </div>
                                 </div>
                                 <div class="flex items-start p-3 bg-slate-50 rounded-lg">
-                                    <i class="fas fa-edit text-green-500 mt-1 mr-3"></i>
+                                    <i class="fas fa-edit text-blue-500 mt-1 mr-3"></i>
                                     <div class="flex-1">
                                         <p class="text-sm font-medium text-slate-800">Modification licence - Athlète #12345</p>
                                         <p class="text-xs text-slate-500">06/05/2025 14:15:30 • Par: Admin Rabe</p>
@@ -93,41 +93,41 @@
                     <!-- Compliance -->
                     <div class="space-y-6">
                         <div class="bg-white rounded-2xl shadow-sm p-6">
-                            <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-shield-alt text-green-500 mr-2"></i>Conformité</h2>
+                            <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-shield-alt text-blue-500 mr-2"></i>Conformité</h2>
                             <div class="space-y-4">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <i class="fas fa-certificate text-blue-500 mr-3"></i>
                                         <span class="text-slate-700">TLS/SSL Certificate</span>
                                     </div>
-                                    <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Valide</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Valide</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <i class="fas fa-lock text-blue-500 mr-3"></i>
                                         <span class="text-slate-700">Chiffrement AES-256</span>
                                     </div>
-                                    <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Actif</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Actif</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <i class="fas fa-user-shield text-blue-500 mr-3"></i>
                                         <span class="text-slate-700">2FA Admin</span>
                                     </div>
-                                    <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Obligatoire</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Obligatoire</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <i class="fas fa-file-contract text-blue-500 mr-3"></i>
                                         <span class="text-slate-700">RGPD / Loi 2021-016</span>
                                     </div>
-                                    <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Conforme</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Conforme</span>
                                 </div>
                             </div>
                         </div>
 
                         <div class="bg-white rounded-2xl shadow-sm p-6">
-                            <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-bug text-rose-500 mr-2"></i>Sécurité</h2>
+                            <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-bug text-blue-500 mr-2"></i>Sécurité</h2>
                             <div class="space-y-3">
                                 <div class="flex items-center justify-between p-3 bg-slate-50 rounded-lg">
                                     <span class="text-slate-700">Dernier penetration test</span>
@@ -137,7 +137,7 @@
                                     <span class="text-slate-700">Prochain test planifié</span>
                                     <span class="text-sm text-slate-600">15 Septembre 2025</span>
                                 </div>
-                                <button class="w-full py-2 bg-rose-100 text-rose-700 rounded-lg font-medium hover:bg-rose-200"><i class="fas fa-shield-alt mr-2"></i>Lancer audit sécurité</button>
+                                <button class="w-full py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-shield-alt mr-2"></i>Lancer audit sécurité</button>
                             </div>
                         </div>
                     </div>

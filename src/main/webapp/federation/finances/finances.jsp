@@ -20,7 +20,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-amber-400 to-amber-600 rounded-lg flex items-center justify-center">
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center">
                         <i class="fas fa-landmark text-white"></i>
                     </div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
@@ -48,7 +48,7 @@
                         <p class="text-slate-500 text-sm">Suivi des paiements et audit des transactions</p>
                     </div>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 bg-green-100 text-green-700 rounded-lg font-medium hover:bg-green-200"><i class="fas fa-file-export mr-2"></i>Export financier</button>
+                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-green-200"><i class="fas fa-file-export mr-2"></i>Export financier</button>
                         <button class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700"><i class="fas fa-cog mr-2"></i>Paramètres tarifs</button>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                 <!-- Financial Stats -->
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-wallet text-green-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-wallet text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Recettes totales (2025)</h3>
                         <p class="text-2xl font-bold text-slate-800">32.4M Ar</p>
                     </div>
@@ -87,7 +87,7 @@
                     </div>
                     <!-- Payment Methods -->
                     <div class="bg-white rounded-2xl shadow-sm p-6">
-                        <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-chart-pie text-green-500 mr-2"></i>Répartition Mobile Money</h2>
+                        <h2 class="text-lg font-bold text-slate-800 mb-4"><i class="fas fa-chart-pie text-blue-500 mr-2"></i>Répartition Mobile Money</h2>
                         <canvas id="paymentChart" height="200"></canvas>
                     </div>
                 </div>
@@ -118,9 +118,9 @@
                                     <td class="py-4 px-6 text-slate-600">06/05/2025 14:32</td>
                                     <td class="py-4 px-6 font-medium text-slate-800">Rakoto Jean</td>
                                     <td class="py-4 px-6 text-slate-700">Licence Senior 2025</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Mvola</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Mvola</span></td>
                                     <td class="py-4 px-6 font-semibold text-slate-800">27,000 Ar</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Confirmé</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Confirmé</span></td>
                                 </tr>
                                 <tr class="border-b border-slate-100">
                                     <td class="py-4 px-6 text-slate-600">06/05/2025 13:15</td>
@@ -128,7 +128,7 @@
                                     <td class="py-4 px-6 text-slate-700">Licence Junior 2025</td>
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-orange-100 text-orange-700 rounded text-sm">Orange</span></td>
                                     <td class="py-4 px-6 font-semibold text-slate-800">20,000 Ar</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Confirmé</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Confirmé</span></td>
                                 </tr>
                                 <tr class="border-b border-slate-100">
                                     <td class="py-4 px-6 text-slate-600">06/05/2025 11:45</td>
@@ -136,7 +136,7 @@
                                     <td class="py-4 px-6 text-slate-700">Inscription Championnat</td>
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-sm">Airtel</span></td>
                                     <td class="py-4 px-6 font-semibold text-slate-800">10,000 Ar</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-green-100 text-green-700 rounded text-sm">Confirmé</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Confirmé</span></td>
                                 </tr>
                             </tbody>
                         </table>

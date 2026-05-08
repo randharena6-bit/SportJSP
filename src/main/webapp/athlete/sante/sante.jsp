@@ -61,7 +61,7 @@
                         <p class="text-secondary-500 text-sm">Suivi médical et biométrique confidentiel</p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium"><i class="fas fa-shield-alt mr-1"></i>Accès restreint</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"><i class="fas fa-shield-alt mr-1"></i>Accès restreint</span>
                         <button onclick="openNewEntryModal()" class="px-4 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition"><i class="fas fa-plus mr-2"></i>Nouvelle saisie</button>
                     </div>
                 </div>
@@ -69,11 +69,11 @@
 
             <main class="p-8">
                 <!-- Alert Banner -->
-                <div class="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-8 flex items-start">
-                    <i class="fas fa-exclamation-triangle text-amber-500 mt-1 mr-3"></i>
+                <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mb-8 flex items-start">
+                    <i class="fas fa-exclamation-triangle text-blue-500 mt-1 mr-3"></i>
                     <div>
-                        <h4 class="font-semibold text-amber-800">Attention: Dossier médical confidentiel</h4>
-                        <p class="text-sm text-amber-700">Ces informations sont accessibles uniquement par vous, votre médecin du sport et votre entraîneur (avec votre autorisation).</p>
+                        <h4 class="font-semibold text-blue-800">Attention: Dossier médical confidentiel</h4>
+                        <p class="text-sm text-blue-700">Ces informations sont accessibles uniquement par vous, votre médecin du sport et votre entraîneur (avec votre autorisation).</p>
                     </div>
                 </div>
 
@@ -84,15 +84,15 @@
                             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                                 <i class="fas fa-weight text-blue-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium">Stable</span>
+                            <span class="text-blue-500 text-sm font-medium">Stable</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Poids</h3>
                         <p class="text-2xl font-bold text-secondary-800">72.5 <span class="text-lg font-normal text-secondary-500">kg</span></p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                                <i class="fas fa-ruler-vertical text-green-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-ruler-vertical text-blue-600 text-xl"></i>
                             </div>
                         </div>
                         <h3 class="text-secondary-500 text-sm">Taille</h3>
@@ -100,10 +100,10 @@
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                                <i class="fas fa-calculator text-purple-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-calculator text-blue-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium">Normal</span>
+                            <span class="text-blue-500 text-sm font-medium">Normal</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">IMC</h3>
                         <p class="text-2xl font-bold text-secondary-800">21.7</p>
@@ -113,7 +113,7 @@
                             <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
                                 <i class="fas fa-lungs text-red-600 text-xl"></i>
                             </div>
-                            <span class="text-green-500 text-sm font-medium">+2%</span>
+                            <span class="text-blue-500 text-sm font-medium">+2%</span>
                         </div>
                         <h3 class="text-secondary-500 text-sm">VO2 Max</h3>
                         <p class="text-2xl font-bold text-secondary-800">58.5 <span class="text-lg font-normal text-secondary-500">ml/kg/min</span></p>
@@ -141,26 +141,26 @@
                     <div class="p-6">
                         <div class="space-y-4">
                             <div class="flex items-start p-4 bg-green-50 rounded-xl border-l-4 border-green-500">
-                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
-                                    <i class="fas fa-check-circle text-green-600 text-xl"></i>
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl"></i>
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between">
                                         <h4 class="font-semibold text-secondary-800">Entorse cheville gauche</h4>
-                                        <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">Guérie</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Guérie</span>
                                     </div>
                                     <p class="text-sm text-secondary-500 mt-1">15 Jan - 28 Fév 2025 (6 semaines)</p>
                                     <p class="text-sm text-secondary-600 mt-2">Traitement: Physiothérapie + renforcement proprioceptif</p>
                                 </div>
                             </div>
-                            <div class="flex items-start p-4 bg-amber-50 rounded-xl border-l-4 border-amber-500">
-                                <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mr-4">
-                                    <i class="fas fa-band-aid text-amber-600 text-xl"></i>
+                            <div class="flex items-start p-4 bg-blue-50 rounded-xl border-l-4 border-amber-500">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-band-aid text-blue-600 text-xl"></i>
                                 </div>
                                 <div class="flex-1">
                                     <div class="flex items-center justify-between">
                                         <h4 class="font-semibold text-secondary-800">Tension musculaire ischio-jambiers</h4>
-                                        <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs font-medium">En traitement</span>
+                                        <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">En traitement</span>
                                     </div>
                                     <p class="text-sm text-secondary-500 mt-1">Depuis le 5 Mai 2025</p>
                                     <p class="text-sm text-secondary-600 mt-2">Traitement: Repos, étirements, cryothérapie</p>
@@ -184,7 +184,7 @@
                                 <h4 class="font-semibold text-secondary-800">Dr. Rasoamanana Luc</h4>
                                 <p class="text-sm text-secondary-500">Médecin du Sport - CHU Antananarivo</p>
                                 <div class="flex items-center mt-2 space-x-3">
-                                    <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">Disponible</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Disponible</span>
                                 </div>
                             </div>
                             <button class="px-4 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition"><i class="fas fa-comment-medical mr-2"></i>Message</button>

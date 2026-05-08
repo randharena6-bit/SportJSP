@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -48,14 +48,14 @@
                 <!-- Upcoming Competitions -->
                 <div class="bg-white rounded-2xl shadow-sm mb-8">
                     <div class="p-6 border-b border-slate-100">
-                        <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-calendar-alt text-emerald-500 mr-2"></i>Prochaines compétitions de l'équipe</h2>
+                        <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-calendar-alt text-blue-500 mr-2"></i>Prochaines compétitions de l'équipe</h2>
                     </div>
                     <div class="p-6">
                         <div class="space-y-4">
-                            <div class="flex items-center p-4 bg-emerald-50 rounded-xl">
-                                <div class="w-16 h-16 bg-emerald-100 rounded-xl flex flex-col items-center justify-center mr-4">
-                                    <span class="text-xs text-emerald-600 font-bold">MAI</span>
-                                    <span class="text-xl font-bold text-emerald-700">15</span>
+                            <div class="flex items-center p-4 bg-blue-50 rounded-xl">
+                                <div class="w-16 h-16 bg-blue-100 rounded-xl flex flex-col items-center justify-center mr-4">
+                                    <span class="text-xs text-blue-600 font-bold">MAI</span>
+                                    <span class="text-xl font-bold text-blue-700">15</span>
                                 </div>
                                 <div class="flex-1">
                                     <h4 class="font-semibold text-slate-800">Championnat National d'Athlétisme</h4>
@@ -82,7 +82,7 @@
                 <div class="bg-white rounded-2xl shadow-sm">
                     <div class="p-6 border-b border-slate-100 flex items-center justify-between">
                         <h2 class="text-lg font-bold text-slate-800"><i class="fas fa-file-alt text-blue-500 mr-2"></i>Feuille de match digitale</h2>
-                        <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-sm">Championnat National - 100m Finale</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Championnat National - 100m Finale</span>
                     </div>
                     <div class="p-6">
                         <div class="overflow-x-auto">
@@ -102,21 +102,21 @@
                                         <td class="py-3 px-4"><input type="text" class="w-20 px-2 py-1 border border-slate-200 rounded text-center" value="245"></td>
                                         <td class="py-3 px-4"><input type="text" class="w-24 px-2 py-1 border border-slate-200 rounded text-center" placeholder="10.45"></td>
                                         <td class="py-3 px-4"><input type="text" class="w-16 px-2 py-1 border border-slate-200 rounded text-center" placeholder="1"></td>
-                                        <td class="py-3 px-4"><button class="px-3 py-1 bg-green-100 text-green-700 rounded text-sm"><i class="fas fa-check mr-1"></i>Valider</button></td>
+                                        <td class="py-3 px-4"><button class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm"><i class="fas fa-check mr-1"></i>Valider</button></td>
                                     </tr>
                                     <tr class="border-b border-slate-100">
                                         <td class="py-3 px-4 font-medium text-slate-800">Rasoa Paul</td>
                                         <td class="py-3 px-4"><input type="text" class="w-20 px-2 py-1 border border-slate-200 rounded text-center" value="247"></td>
                                         <td class="py-3 px-4"><input type="text" class="w-24 px-2 py-1 border border-slate-200 rounded text-center" placeholder="11.02"></td>
                                         <td class="py-3 px-4"><input type="text" class="w-16 px-2 py-1 border border-slate-200 rounded text-center" placeholder="5"></td>
-                                        <td class="py-3 px-4"><button class="px-3 py-1 bg-green-100 text-green-700 rounded text-sm"><i class="fas fa-check mr-1"></i>Valider</button></td>
+                                        <td class="py-3 px-4"><button class="px-3 py-1 bg-blue-100 text-blue-700 rounded text-sm"><i class="fas fa-check mr-1"></i>Valider</button></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="mt-4 flex gap-3">
                             <button class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700"><i class="fas fa-save mr-2"></i>Sauvegarder</button>
-                            <button class="px-4 py-2 bg-emerald-100 text-emerald-700 rounded-lg font-medium hover:bg-emerald-200"><i class="fas fa-paper-plane mr-2"></i>Transmettre à la fédération</button>
+                            <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-paper-plane mr-2"></i>Transmettre à la fédération</button>
                         </div>
                     </div>
                 </div>

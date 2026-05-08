@@ -19,7 +19,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -71,7 +71,7 @@
                         <div class="space-y-4">
                             <div>
                                 <div class="flex justify-between text-sm mb-1"><span class="text-slate-600">100m Actuel: 10.45s</span><span class="font-semibold text-slate-800">Objectif: 10.30s</span></div>
-                                <div class="w-full h-3 bg-slate-200 rounded-full"><div class="h-3 bg-green-500 rounded-full" style="width: 85%"></div></div>
+                                <div class="w-full h-3 bg-slate-200 rounded-full"><div class="h-3 bg-blue-500 rounded-full" style="width: 85%"></div></div>
                             </div>
                             <div>
                                 <div class="flex justify-between text-sm mb-1"><span class="text-slate-600">200m Actuel: 21.32s</span><span class="font-semibold text-slate-800">Objectif: 21.00s</span></div>

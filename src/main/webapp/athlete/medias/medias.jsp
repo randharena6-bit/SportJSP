@@ -112,7 +112,7 @@
                             <div class="absolute bottom-4 right-4 px-3 py-1 bg-black/50 text-white rounded-lg text-sm">2:45:12</div>
                         </div>
                         <div class="p-4">
-                            <span class="text-xs text-emerald-600 font-semibold">FOOTBALL</span>
+                            <span class="text-xs text-blue-600 font-semibold">FOOTBALL</span>
                             <h4 class="font-bold text-secondary-800 mt-1">Coupe de Madagascar - Finale</h4>
                             <p class="text-sm text-secondary-500 mt-1"><i class="fas fa-calendar mr-1"></i>Diffusé hier</p>
                         </div>
@@ -124,7 +124,7 @@
                             <div class="absolute bottom-4 right-4 px-3 py-1 bg-black/50 text-white rounded-lg text-sm">1:30:45</div>
                         </div>
                         <div class="p-4">
-                            <span class="text-xs text-purple-600 font-semibold">BASKETBALL</span>
+                            <span class="text-xs text-blue-600 font-semibold">BASKETBALL</span>
                             <h4 class="font-bold text-secondary-800 mt-1">Playoffs - Demi-finale</h4>
                             <p class="text-sm text-secondary-500 mt-1"><i class="fas fa-calendar mr-1"></i>Il y a 3 jours</p>
                         </div>
@@ -143,29 +143,29 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div class="border border-secondary-200 rounded-xl p-4 hover:border-purple-500 transition">
                                 <div class="flex items-center justify-between mb-3">
-                                    <span class="px-2 py-1 bg-green-100 text-green-700 rounded text-xs font-medium">Inscriptions ouvertes</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">Inscriptions ouvertes</span>
                                     <i class="fas fa-futbol text-purple-500 text-xl"></i>
                                 </div>
                                 <h4 class="font-bold text-secondary-800">FIFA 24 Championship</h4>
                                 <p class="text-sm text-secondary-500 mt-1">Tournoi national - 64 joueurs</p>
                                 <div class="flex items-center justify-between mt-4">
                                     <span class="text-sm text-secondary-600"><i class="fas fa-calendar mr-1"></i>15 Juin</span>
-                                    <span class="text-sm font-semibold text-purple-600">50 000 Ar</span>
+                                    <span class="text-sm font-semibold text-blue-600">50 000 Ar</span>
                                 </div>
                                 <button class="w-full mt-4 py-2 bg-purple-600 text-white rounded-lg font-medium hover:bg-purple-700 transition">S'inscrire</button>
                             </div>
                             <div class="border border-secondary-200 rounded-xl p-4 hover:border-purple-500 transition">
                                 <div class="flex items-center justify-between mb-3">
-                                    <span class="px-2 py-1 bg-amber-100 text-amber-700 rounded text-xs font-medium">En cours</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs font-medium">En cours</span>
                                     <i class="fas fa-car text-purple-500 text-xl"></i>
                                 </div>
                                 <h4 class="font-bold text-secondary-800">eRacing Madagascar Cup</h4>
                                 <p class="text-sm text-secondary-500 mt-1">Formule 1 - 32 pilotes</p>
                                 <div class="flex items-center justify-between mt-4">
                                     <span class="text-sm text-secondary-600"><i class="fas fa-calendar mr-1"></i>Phase finale</span>
-                                    <span class="text-sm font-semibold text-green-600">#8/32</span>
+                                    <span class="text-sm font-semibold text-blue-600">#8/32</span>
                                 </div>
-                                <button class="w-full mt-4 py-2 border border-purple-600 text-purple-600 rounded-lg font-medium hover:bg-purple-50 transition">Voir classement</button>
+                                <button class="w-full mt-4 py-2 border border-purple-600 text-blue-600 rounded-lg font-medium hover:bg-purple-50 transition">Voir classement</button>
                             </div>
                             <div class="border border-secondary-200 rounded-xl p-4 hover:border-purple-500 transition">
                                 <div class="flex items-center justify-between mb-3">
@@ -176,7 +176,7 @@
                                 <p class="text-sm text-secondary-500 mt-1">Saison régulière - 128 joueurs</p>
                                 <div class="flex items-center justify-between mt-4">
                                     <span class="text-sm text-secondary-600"><i class="fas fa-calendar mr-1"></i>1 Juillet</span>
-                                    <span class="text-sm font-semibold text-purple-600">25 000 Ar</span>
+                                    <span class="text-sm font-semibold text-blue-600">25 000 Ar</span>
                                 </div>
                                 <button class="w-full mt-4 py-2 bg-secondary-200 text-secondary-600 rounded-lg font-medium cursor-not-allowed" disabled>Bientôt</button>
                             </div>

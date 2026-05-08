@@ -18,7 +18,7 @@
         <aside class="w-64 bg-white border-r border-slate-200 flex-shrink-0 overflow-y-auto">
             <div class="p-6">
                 <div class="flex items-center space-x-3 mb-8">
-                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
+                    <div class="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-dumbbell text-white"></i></div>
                     <span class="text-xl font-bold text-slate-800">SPORT<span class="text-blue-600">CONNECT</span></span>
                 </div>
                 <nav class="space-y-1">
@@ -61,18 +61,18 @@
                     <div class="grid grid-cols-7 gap-2">
                         <div class="text-center"><div class="text-sm text-slate-500">Lun</div><div class="font-semibold">5</div></div>
                         <div class="text-center"><div class="text-sm text-slate-500">Mar</div><div class="font-semibold">6</div></div>
-                        <div class="text-center"><div class="text-sm text-slate-500">Mer</div><div class="font-semibold text-emerald-600">7</div></div>
+                        <div class="text-center"><div class="text-sm text-slate-500">Mer</div><div class="font-semibold text-blue-600">7</div></div>
                         <div class="text-center"><div class="text-sm text-slate-500">Jeu</div><div class="font-semibold">8</div></div>
-                        <div class="text-center"><div class="text-sm text-slate-500">Ven</div><div class="font-semibold text-emerald-600">9</div></div>
+                        <div class="text-center"><div class="text-sm text-slate-500">Ven</div><div class="font-semibold text-blue-600">9</div></div>
                         <div class="text-center"><div class="text-sm text-slate-500">Sam</div><div class="font-semibold">10</div></div>
                         <div class="text-center"><div class="text-sm text-slate-500">Dim</div><div class="font-semibold">11</div></div>
                     </div>
 
                     <div class="mt-6 space-y-3">
-                        <div class="flex items-center p-4 bg-emerald-50 rounded-xl border-l-4 border-emerald-500">
+                        <div class="flex items-center p-4 bg-blue-50 rounded-xl border-l-4 border-emerald-500">
                             <div class="w-16 text-center mr-4">
-                                <div class="text-sm font-bold text-emerald-700">06:00</div>
-                                <div class="text-xs text-emerald-600">08:00</div>
+                                <div class="text-sm font-bold text-blue-700">06:00</div>
+                                <div class="text-xs text-blue-600">08:00</div>
                             </div>
                             <div class="flex-1">
                                 <h4 class="font-semibold text-slate-800">Entraînement 100m/200m</h4>
