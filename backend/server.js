@@ -6,6 +6,7 @@ const adminRoutes = require('./src/routes/adminRoutes');
 const federationRoutes = require('./src/routes/federationRoutes');
 const reportRoutes = require('./src/routes/reportRoutes');
 const athleteRoutes = require('./src/routes/athleteRoutes');
+const coachRoutes = require('./src/routes/coachRoutes');
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.use('/api/admin', adminRoutes);
 app.use('/api/federations', federationRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api/athlete', athleteRoutes);
+app.use('/api/coach', coachRoutes);
 
 // Health check route
 app.get('/health', (req, res) => {
@@ -49,6 +51,7 @@ app.get('/', (req, res) => {
       federations: '/api/federations',
       reports: '/api/reports',
       athlete: '/api/athlete',
+      coach: '/api/coach',
       health: '/health'
     },
     documentation: {
@@ -79,6 +82,15 @@ app.get('/', (req, res) => {
         health: '/api/athlete/health',
         media: '/api/athlete/media',
         notifications: '/api/athlete/notifications'
+      },
+      coach: {
+        dashboard: '/api/coach/dashboard',
+        athletes: '/api/coach/athletes',
+        trainingSessions: '/api/coach/training-sessions',
+        analysis: '/api/coach/analysis',
+        competitions: '/api/coach/competitions',
+        scouting: '/api/coach/scouting',
+        messages: '/api/coach/messages'
       }
     }
   });
