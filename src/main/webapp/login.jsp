@@ -364,7 +364,7 @@
                         </div>
 
                         <!-- Login Form -->
-                        <form id="loginForm" class="space-y-6 form-container" onsubmit="handleLogin(event)">
+                        <form id="loginForm" class="space-y-6 form-container" onsubmit="handleLogin(event)" action="javascript:void(0)">
                             <input type="hidden" name="role" id="selectedRole" value="athlete">
                             
                             <div>
@@ -406,7 +406,7 @@
                         </form>
 
                         <!-- Register Form -->
-                        <form id="registerForm" class="space-y-6 hidden form-container" onsubmit="handleRegister(event)">
+                        <form id="registerForm" class="space-y-6 hidden form-container" onsubmit="handleRegister(event)" action="javascript:void(0)">
                             <input type="hidden" name="role" id="registerRole" value="athlete">
                             
                             <!-- Role Selection Display -->
@@ -578,7 +578,7 @@
     </div>
 
     <script>
-        // Force refresh - v20250108_1059
+        // Force refresh - v20250108_1448
         console.log('Loading login script with API URL: http://localhost:3003/api/auth');
         const API_BASE_URL = 'http://localhost:3003/api/auth';
         let currentRole = 'athlete';
@@ -606,6 +606,11 @@
                     },
                     body: JSON.stringify(data)
                 });
+
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('Le serveur a retourné une réponse non-JSON. Vérifiez que l\'API est disponible.');
+                }
 
                 const result = await response.json();
 
@@ -666,6 +671,11 @@
                     },
                     body: JSON.stringify(data)
                 });
+
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('Le serveur a retourné une réponse non-JSON. Vérifiez que l\'API est disponible.');
+                }
 
                 const result = await response.json();
 
