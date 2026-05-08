@@ -106,8 +106,7 @@
     <section class="relative min-h-screen animated-bg hero-pattern flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary-900/20 to-primary-900/40"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="text-white animate-fade-in">
+            <div class="text-center text-white animate-fade-in">
                     <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur rounded-full mb-6 border border-white/20">
                         <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
                         <span class="text-sm font-medium">Numérique de Madagascar 2035</span>
@@ -116,10 +115,10 @@
                         La Révolution Digitale du
                         <span class="text-primary-200">Sport Malgache</span>
                     </h1>
-                    <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-xl">
+                    <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
                         Plateforme nationale intégrée pour la gestion des athlètes, fédérations, entraîneurs et compétitions. Un écosystème connecté pour l'excellence sportive.
                     </p>
-                    <div class="flex flex-wrap gap-4">
+                    <div class="flex flex-wrap gap-4 justify-center">
                         <a href="login.jsp" class="px-8 py-4 bg-white text-primary-700 rounded-xl font-semibold hover:bg-primary-50 transition shadow-xl flex items-center">
                             <i class="fas fa-rocket mr-2"></i>Commencer maintenant
                         </a>
@@ -127,7 +126,7 @@
                             <i class="fas fa-play-circle mr-2"></i>Découvrir
                         </a>
                     </div>
-                    <div class="mt-12 flex items-center space-x-8">
+                    <div class="mt-12 flex items-center justify-center space-x-8">
                         <div>
                             <div class="text-3xl font-bold stat-counter">45+</div>
                             <div class="text-primary-200 text-sm">Fédérations</div>
@@ -143,31 +142,6 @@
                             <div class="text-primary-200 text-sm">Digital</div>
                         </div>
                     </div>
-                </div>
-                <div class="hidden lg:block">
-                    <div class="relative">
-                        <div class="absolute -inset-4 bg-white/10 rounded-3xl blur-2xl"></div>
-                        <div class="relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 animate-fade-in border border-white/20" style="animation-delay: 0.2s;">
-                            <div class="text-center text-white">
-                                <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-white/20 flex items-center justify-center">
-                                    <i class="fas fa-trophy text-white text-4xl"></i>
-                                </div>
-                                <h3 class="text-2xl font-bold mb-2">Excellence Sportive</h3>
-                                <p class="text-primary-100 mb-6">Rejoignez la première plateforme digitale dédiée au sport malgache</p>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="bg-white/10 rounded-xl p-4 text-center border border-white/10">
-                                        <div class="text-3xl font-bold text-white">6</div>
-                                        <div class="text-sm text-primary-200">Fédérations</div>
-                                    </div>
-                                    <div class="bg-white/10 rounded-xl p-4 text-center border border-white/10">
-                                        <div class="text-3xl font-bold text-white">9</div>
-                                        <div class="text-sm text-primary-200">Clubs</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- Floating Particles -->
