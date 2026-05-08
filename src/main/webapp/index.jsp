@@ -31,9 +31,91 @@
         .role-card { background: white; border: 2px solid #e2e8f0; transition: all 0.3s ease; }
         .role-card:hover { border-color: #3b82f6; box-shadow: 0 10px 30px rgba(59, 130, 246, 0.2); }
         .stat-counter { font-variant-numeric: tabular-nums; }
+        
+        /* Mobile Menu Animation */
+        #mobile-menu {
+            transition: all 0.3s ease;
+            transform-origin: top;
+        }
+        #mobile-menu.hidden {
+            display: none;
+            opacity: 0;
+            transform: scaleY(0);
+        }
+        #mobile-menu:not(.hidden) {
+            display: block;
+            opacity: 1;
+            transform: scaleY(1);
+            animation: slideDown 0.3s ease;
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Animated Background */
+        .animated-bg {
+            background: linear-gradient(-45deg, #1e40af, #3b82f6, #60a5fa, #2563eb, #1e3a8a);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        /* Floating Particles */
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .particle {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float 20s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+        }
+        .particle:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .particle:nth-child(2) { left: 20%; animation-delay: 2s; }
+        .particle:nth-child(3) { left: 30%; animation-delay: 4s; }
+        .particle:nth-child(4) { left: 40%; animation-delay: 6s; }
+        .particle:nth-child(5) { left: 50%; animation-delay: 8s; }
+        .particle:nth-child(6) { left: 60%; animation-delay: 10s; }
+        .particle:nth-child(7) { left: 70%; animation-delay: 12s; }
+        .particle:nth-child(8) { left: 80%; animation-delay: 14s; }
+        .particle:nth-child(9) { left: 90%; animation-delay: 16s; }
+        .particle:nth-child(10) { left: 5%; animation-delay: 18s; }
+        
+        /* Wave Animation */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: 1440px 100px;
+            animation: wave 10s linear infinite;
+        }
+        @keyframes wave {
+            0% { background-position-x: 0; }
+            100% { background-position-x: 1440px; }
+        }
     </style>
 </head>
-<body class="bg-secondary-50 font-sans antialiased">
+<body class="bg-slate-50 font-sans antialiased">
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-effect border-b border-secondary-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,15 +137,27 @@
                         <i class="fas fa-sign-in-alt mr-2"></i>Connexion
                     </a>
                 </div>
-                <button class="md:hidden text-secondary-600 text-2xl">
-                    <i class="fas fa-bars"></i>
+                <button id="mobile-menu-btn" class="md:hidden text-secondary-600 text-2xl p-2 hover:bg-secondary-100 rounded-lg transition">
+                    <i class="fas fa-bars" id="menu-icon"></i>
                 </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden absolute top-full left-0 right-0 bg-white border-t border-secondary-200 shadow-lg">
+                <div class="px-4 py-6 space-y-4">
+                    <a href="#features" class="block text-secondary-600 hover:text-primary-600 font-medium transition py-2">Fonctionnalités</a>
+                    <a href="#roles" class="block text-secondary-600 hover:text-primary-600 font-medium transition py-2">Rôles</a>
+                    <a href="#about" class="block text-secondary-600 hover:text-primary-600 font-medium transition py-2">À propos</a>
+                    <a href="login.jsp" class="block w-full text-center px-6 py-3 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition">
+                        <i class="fas fa-sign-in-alt mr-2"></i>Connexion
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen gradient-bg hero-pattern flex items-center pt-20">
+    <section class="relative min-h-screen animated-bg hero-pattern flex items-center pt-20 overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-b from-transparent via-primary-900/20 to-primary-900/40"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -107,47 +201,22 @@
                 <div class="hidden lg:block">
                     <div class="relative">
                         <div class="absolute -inset-4 bg-white/10 rounded-3xl blur-2xl"></div>
-                        <div class="relative bg-white rounded-2xl shadow-2xl p-6 animate-fade-in" style="animation-delay: 0.2s;">
-                            <div class="flex items-center justify-between mb-6">
-                                <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 rounded-full bg-primary-100 flex items-center justify-center">
-                                        <i class="fas fa-user text-primary-600"></i>
+                        <div class="relative bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 animate-fade-in border border-white/20" style="animation-delay: 0.2s;">
+                            <div class="text-center text-white">
+                                <div class="w-24 h-24 mx-auto mb-6 rounded-full bg-white/20 flex items-center justify-center">
+                                    <i class="fas fa-trophy text-white text-4xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold mb-2">Excellence Sportive</h3>
+                                <p class="text-primary-100 mb-6">Rejoignez la première plateforme digitale dédiée au sport malgache</p>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white/10 rounded-xl p-4 text-center border border-white/10">
+                                        <div class="text-3xl font-bold text-white">6</div>
+                                        <div class="text-sm text-primary-200">Fédérations</div>
                                     </div>
-                                    <div>
-                                        <div class="font-semibold text-secondary-800">Rakoto Jean</div>
-                                        <div class="text-sm text-secondary-500">Athlète - Athlétisme</div>
+                                    <div class="bg-white/10 rounded-xl p-4 text-center border border-white/10">
+                                        <div class="text-3xl font-bold text-white">9</div>
+                                        <div class="text-sm text-primary-200">Clubs</div>
                                     </div>
-                                </div>
-                                <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm font-medium">Licence Active</span>
-                            </div>
-                            <div class="grid grid-cols-3 gap-4 mb-6">
-                                <div class="bg-secondary-50 rounded-xl p-4 text-center">
-                                    <div class="text-2xl font-bold text-primary-600">24</div>
-                                    <div class="text-xs text-secondary-500">Compétitions</div>
-                                </div>
-                                <div class="bg-secondary-50 rounded-xl p-4 text-center">
-                                    <div class="text-2xl font-bold text-primary-600">12</div>
-                                    <div class="text-xs text-secondary-500">Médailles</div>
-                                </div>
-                                <div class="bg-secondary-50 rounded-xl p-4 text-center">
-                                    <div class="text-2xl font-bold text-primary-600">Elite</div>
-                                    <div class="text-xs text-secondary-500">Niveau</div>
-                                </div>
-                            </div>
-                            <div class="space-y-3">
-                                <div class="flex items-center justify-between p-3 bg-secondary-50 rounded-lg">
-                                    <div class="flex items-center space-x-3">
-                                        <i class="fas fa-calendar text-primary-500"></i>
-                                        <span class="text-sm">Championnat National</span>
-                                    </div>
-                                    <span class="text-xs text-primary-600 font-medium">Dans 5 jours</span>
-                                </div>
-                                <div class="flex items-center justify-between p-3 bg-secondary-50 rounded-lg">
-                                    <div class="flex items-center space-x-3">
-                                        <i class="fas fa-heartbeat text-red-500"></i>
-                                        <span class="text-sm">Bilan de santé</span>
-                                    </div>
-                                    <span class="text-xs text-green-600 font-medium">À jour</span>
                                 </div>
                             </div>
                         </div>
@@ -155,11 +224,28 @@
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-secondary-50 to-transparent"></div>
+        <!-- Floating Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <!-- Animated Wave -->
+        <div class="wave"></div>
+        
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-50 to-transparent"></div>
     </section>
 
     <!-- Roles Section -->
-    <section id="roles" class="py-24 bg-white">
+    <section id="roles" class="py-24 bg-slate-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Espaces Dédiés</span>
@@ -232,7 +318,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-24 bg-secondary-50">
+    <section id="features" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <span class="text-primary-600 font-semibold text-sm uppercase tracking-wider">Fonctionnalités</span>
@@ -286,24 +372,49 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 gradient-bg hero-pattern">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">Prêt à rejoindre la révolution ?</h2>
+    <section class="py-24 animated-bg hero-pattern relative overflow-hidden">
+        <!-- Floating Particles for CTA -->
+        <div class="particles">
+            <div class="particle" style="left: 15%; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 35%; animation-delay: 5s;"></div>
+            <div class="particle" style="left: 55%; animation-delay: 9s;"></div>
+            <div class="particle" style="left: 75%; animation-delay: 13s;"></div>
+            <div class="particle" style="left: 85%; animation-delay: 17s;"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl font-bold text-white mb-6 animate-fade-in">Prêt à rejoindre la révolution ?</h2>
             <p class="text-xl text-primary-100 mb-10">Rejoignez les 45 fédérations et 50,000+ athlètes déjà connectés</p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="login.jsp" class="px-10 py-4 bg-white text-primary-700 rounded-xl font-semibold hover:bg-primary-50 transition shadow-xl">
+                <a href="login.jsp" class="px-10 py-4 bg-white text-primary-700 rounded-xl font-semibold hover:bg-primary-50 transition shadow-xl hover:scale-105 transform">
                     <i class="fas fa-user-plus mr-2"></i>Créer un compte
                 </a>
-                <a href="#" class="px-10 py-4 bg-white/10 backdrop-blur text-white rounded-xl font-semibold border border-white/30 hover:bg-white/20 transition">
+                <a href="#" class="px-10 py-4 bg-white/10 backdrop-blur text-white rounded-xl font-semibold border border-white/30 hover:bg-white/20 transition hover:scale-105 transform">
                     <i class="fas fa-info-circle mr-2"></i>En savoir plus
                 </a>
             </div>
         </div>
+        
+        <!-- Wave Separator -->
+        <div class="absolute top-0 left-0 right-0 h-20 bg-slate-50" style="clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);"></div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-secondary-900 text-white py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer class="bg-slate-900 text-white py-16 relative overflow-hidden">
+        <!-- Animated Background Gradient -->
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 opacity-50"></div>
+        
+        <!-- Subtle Animated Particles in Footer -->
+        <div class="particles">
+            <div class="particle" style="width: 6px; height: 6px; left: 10%; animation-duration: 25s; animation-delay: 2s;"></div>
+            <div class="particle" style="width: 4px; height: 4px; left: 25%; animation-duration: 30s; animation-delay: 7s;"></div>
+            <div class="particle" style="width: 8px; height: 8px; left: 40%; animation-duration: 22s; animation-delay: 12s;"></div>
+            <div class="particle" style="width: 5px; height: 5px; left: 60%; animation-duration: 28s; animation-delay: 5s;"></div>
+            <div class="particle" style="width: 7px; height: 7px; left: 80%; animation-duration: 26s; animation-delay: 9s;"></div>
+            <div class="particle" style="width: 4px; height: 4px; left: 95%; animation-duration: 24s; animation-delay: 15s;"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid md:grid-cols-4 gap-12 mb-12">
                 <div>
                     <div class="flex items-center space-x-3 mb-6">

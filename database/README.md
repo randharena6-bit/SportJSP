@@ -1,5 +1,10 @@
 # SPORT CONNECT - Base de Données
 
+## Versions disponibles
+
+- **MySQL**: `sportconnect_schema.sql` + `seed_data.sql`
+- **PostgreSQL**: `sportconnect_schema_postgres.sql` + `seed_data_postgres.sql` + `README_POSTGRES.md`
+
 ## Configuration de la Base de Données MySQL
 
 ### Prérequis

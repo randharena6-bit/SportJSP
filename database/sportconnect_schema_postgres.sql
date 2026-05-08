@@ -127,32 +127,8 @@ $$ language 'plpgsql';
 CREATE TRIGGER update_users_updated_at BEFORE UPDATE ON users
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
--- Table des athlètes
-CREATE TABLE athletes (
-    user_id UUID PRIMARY KEY,
-    first_name VARCHAR(100) NOT NULL,
-    last_name VARCHAR(100) NOT NULL,
-    birth_date DATE,
-    gender gender_type DEFAULT 'M',
-    height DECIMAL(5,2),
-    weight DECIMAL(5,2),
-    current_club_id UUID,
-    sport_type VARCHAR(50),
-    position VARCHAR(50),
-    national_team_eligible BOOLEAN DEFAULT FALSE,
-    biography TEXT,
-    photo_url VARCHAR(500),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT fk_athletes_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    CONSTRAINT fk_athletes_club FOREIGN KEY (current_club_id) REFERENCES clubs(id) ON DELETE SET NULL
-);
-
-CREATE TRIGGER update_athletes_updated_at BEFORE UPDATE ON athletes
-    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
-
 -- =============================================================================
--- 3. TABLES ORGANISATIONS
+-- 3. TABLES ORGANISATIONS (AVANT les athlètes car références FK)
 -- =============================================================================
 
 -- Table des fédérations
@@ -174,6 +150,10 @@ CREATE TABLE federations (
 
 CREATE TRIGGER update_federations_updated_at BEFORE UPDATE ON federations
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
+
+-- =============================================================================
+-- 2B. TABLE CLUBS (AVANT athlètes/car références FK)
+-- =============================================================================
 
 -- Table des clubs
 CREATE TABLE clubs (
@@ -198,7 +178,33 @@ CREATE TABLE clubs (
 CREATE TRIGGER update_clubs_updated_at BEFORE UPDATE ON clubs
     FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
--- Maintenant on peut créer les références vers clubs
+-- =============================================================================
+-- 2C. TABLES PROFILS UTILISATEURS (APRÈS clubs)
+-- =============================================================================
+
+-- Table des athlètes
+CREATE TABLE athletes (
+    user_id UUID PRIMARY KEY,
+    first_name VARCHAR(100) NOT NULL,
+    last_name VARCHAR(100) NOT NULL,
+    birth_date DATE,
+    gender gender_type DEFAULT 'M',
+    height DECIMAL(5,2),
+    weight DECIMAL(5,2),
+    current_club_id UUID,
+    sport_type VARCHAR(50),
+    position VARCHAR(50),
+    national_team_eligible BOOLEAN DEFAULT FALSE,
+    biography TEXT,
+    photo_url VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    CONSTRAINT fk_athletes_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    CONSTRAINT fk_athletes_club FOREIGN KEY (current_club_id) REFERENCES clubs(id) ON DELETE SET NULL
+);
+
+CREATE TRIGGER update_athletes_updated_at BEFORE UPDATE ON athletes
+    FOR EACH ROW EXECUTE FUNCTION update_updated_at_column();
 
 -- Table des entraîneurs
 CREATE TABLE coaches (
