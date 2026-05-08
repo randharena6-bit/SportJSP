@@ -79,7 +79,7 @@
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <img src="https://ui-avatars.com/api/?name=Admin+Rabe&background=e11d48&color=fff" class="w-10 h-10 rounded-full mr-3">
+                                            <img src="https://ui-avatars.com/api/?name=Admin+Rabe&background=2563eb&color=fff" class="w-10 h-10 rounded-full mr-3">
                                             <div>
                                                 <p class="font-medium text-slate-800">Rabe Andry</p>
                                                 <p class="text-xs text-slate-500">admin.rabe@gov.mg</p>
@@ -98,7 +98,7 @@
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <img src="https://ui-avatars.com/api/?name=M+Rabe&background=f59e0b&color=fff" class="w-10 h-10 rounded-full mr-3">
+                                            <img src="https://ui-avatars.com/api/?name=M+Rabe&background=2563eb&color=fff" class="w-10 h-10 rounded-full mr-3">
                                             <div>
                                                 <p class="font-medium text-slate-800">Rabe José</p>
                                                 <p class="text-xs text-slate-500">fma.admin@sport.mg</p>
@@ -117,7 +117,7 @@
                                 <tr class="border-b border-slate-100 hover:bg-slate-50">
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <img src="https://ui-avatars.com/api/?name=Coach+Rakoto&background=10b981&color=fff" class="w-10 h-10 rounded-full mr-3">
+                                            <img src="https://ui-avatars.com/api/?name=Coach+Rakoto&background=2563eb&color=fff" class="w-10 h-10 rounded-full mr-3">
                                             <div>
                                                 <p class="font-medium text-slate-800">Rakoto Luc</p>
                                                 <p class="text-xs text-slate-500">luc.r@caa.mg</p>

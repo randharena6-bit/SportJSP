@@ -370,3 +370,10 @@
 127.0.0.1 - - [08/May/2026:20:27:06 +0300] "GET /coach/athletes/athletes.jsp HTTP/1.1" 200 9573 http-bio-9090-exec-9 1
 127.0.0.1 - - [08/May/2026:20:27:20 +0300] "GET /index.jsp HTTP/1.1" 200 26970 http-bio-9090-exec-9 2
 127.0.0.1 - - [08/May/2026:20:27:29 +0300] "GET /athlete/dashboard.jsp HTTP/1.1" 200 24015 http-bio-9090-exec-9 38
+127.0.0.1 - - [08/May/2026:20:29:00 +0300] "GET /athlete/licences/licences.jsp HTTP/1.1" 200 18895 http-bio-9090-exec-3 61
+127.0.0.1 - - [08/May/2026:20:29:02 +0300] "GET /athlete/profil/profil.jsp HTTP/1.1" 200 24387 http-bio-9090-exec-3 49
+127.0.0.1 - - [08/May/2026:20:29:05 +0300] "GET /athlete/medias/medias.jsp HTTP/1.1" 200 16335 http-bio-9090-exec-3 66
+127.0.0.1 - - [08/May/2026:20:29:07 +0300] "GET /athlete/notifications/notifications.jsp HTTP/1.1" 200 15886 http-bio-9090-exec-3 34
+127.0.0.1 - - [08/May/2026:20:29:08 +0300] "GET /athlete/dashboard.jsp HTTP/1.1" 200 24015 http-bio-9090-exec-3 32
+127.0.0.1 - - [08/May/2026:20:29:24 +0300] "GET /athlete/profil/profil.jsp HTTP/1.1" 200 24387 http-bio-9090-exec-3 1
+127.0.0.1 - - [08/May/2026:20:29:27 +0300] "GET /athlete/medias/medias.jsp HTTP/1.1" 200 16335 http-bio-9090-exec-3 3

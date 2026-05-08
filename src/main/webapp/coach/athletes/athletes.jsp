@@ -77,7 +77,7 @@
                     <!-- Athlete Card 2 -->
                     <div class="bg-white rounded-2xl shadow-sm p-6">
                         <div class="flex items-center mb-4">
-                            <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=10b981&color=fff" class="w-16 h-16 rounded-xl mr-4">
+                            <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=2563eb&color=fff" class="w-16 h-16 rounded-xl mr-4">
                             <div>
                                 <h3 class="font-bold text-slate-800">Andria Marie</h3>
                                 <p class="text-sm text-slate-500">Junior • 400m/800m</p>
@@ -98,7 +98,7 @@
                     <!-- Athlete Card 3 -->
                     <div class="bg-white rounded-2xl shadow-sm p-6">
                         <div class="flex items-center mb-4">
-                            <img src="https://ui-avatars.com/api/?name=Paul+Rasoa&background=f59e0b&color=fff" class="w-16 h-16 rounded-xl mr-4">
+                            <img src="https://ui-avatars.com/api/?name=Paul+Rasoa&background=2563eb&color=fff" class="w-16 h-16 rounded-xl mr-4">
                             <div>
                                 <h3 class="font-bold text-slate-800">Rasoa Paul</h3>
                                 <p class="text-sm text-slate-500">Junior • Saut/Longueur</p>

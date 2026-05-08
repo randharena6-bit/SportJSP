@@ -72,7 +72,7 @@
                         <button class="relative p-2 text-secondary-400 hover:text-secondary-600 transition"><i class="fas fa-bell text-xl"></i><span class="absolute top-0 right-0 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">5</span></button>
                         <div class="h-8 w-px bg-secondary-200"></div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://ui-avatars.com/api/?name=Admin+FMA&background=f59e0b&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
+                            <img src="https://ui-avatars.com/api/?name=Admin+FMA&background=2563eb&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
                             <span class="font-medium text-secondary-700">M. Rabe</span>
                         </div>
                     </div>
@@ -159,7 +159,7 @@
                                         <tr class="border-b border-secondary-100">
                                             <td class="py-4 px-6">
                                                 <div class="flex items-center">
-                                                    <img src="https://ui-avatars.com/api/?name=Andria+Marie&background=10b981&color=fff" class="w-10 h-10 rounded-full mr-3">
+                                                    <img src="https://ui-avatars.com/api/?name=Andria+Marie&background=2563eb&color=fff" class="w-10 h-10 rounded-full mr-3">
                                                     <span class="font-medium text-secondary-800">Andria Marie</span>
                                                 </div>
                                             </td>

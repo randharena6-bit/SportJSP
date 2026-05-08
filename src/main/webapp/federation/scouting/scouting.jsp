@@ -140,7 +140,7 @@
                             </div>
                             <div class="talent-card border border-slate-200 rounded-xl p-4">
                                 <div class="flex items-center mb-4">
-                                    <img src="https://ui-avatars.com/api/?name=Ravao+Marie&background=10b981&color=fff" class="w-14 h-14 rounded-xl mr-3">
+                                    <img src="https://ui-avatars.com/api/?name=Ravao+Marie&background=2563eb&color=fff" class="w-14 h-14 rounded-xl mr-3">
                                     <div>
                                         <h4 class="font-bold text-slate-800">Ravao Marie</h4>
                                         <p class="text-sm text-slate-500">15 ans • ASSA</p>

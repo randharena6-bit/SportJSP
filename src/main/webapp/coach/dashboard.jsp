@@ -51,7 +51,7 @@
                         <p class="text-slate-500 text-sm">Vue d'ensemble de l'équipe</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <img src="https://ui-avatars.com/api/?name=Coach+Rakoto&background=10b981&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
+                        <img src="https://ui-avatars.com/api/?name=Coach+Rakoto&background=2563eb&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
                         <span class="font-medium text-slate-700">Rakoto Luc</span>
                     </div>
                 </div>

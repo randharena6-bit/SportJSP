@@ -136,7 +136,7 @@
                                     <td class="py-4 px-6"><input type="checkbox" class="w-4 h-4 rounded border-secondary-300 text-primary-600 focus:ring-primary-500"></td>
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=10b981&color=fff" class="w-10 h-10 rounded-full mr-3">
+                                            <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=2563eb&color=fff" class="w-10 h-10 rounded-full mr-3">
                                             <div>
                                                 <p class="font-medium text-secondary-800">Andria Marie</p>
                                                 <p class="text-xs text-secondary-500">NIN: 1023456789013</p>
@@ -156,7 +156,7 @@
                                     <td class="py-4 px-6"><input type="checkbox" class="w-4 h-4 rounded border-secondary-300 text-primary-600 focus:ring-primary-500"></td>
                                     <td class="py-4 px-6">
                                         <div class="flex items-center">
-                                            <img src="https://ui-avatars.com/api/?name=Paul+Rasoa&background=f59e0b&color=fff" class="w-10 h-10 rounded-full mr-3">
+                                            <img src="https://ui-avatars.com/api/?name=Paul+Rasoa&background=2563eb&color=fff" class="w-10 h-10 rounded-full mr-3">
                                             <div>
                                                 <p class="font-medium text-secondary-800">Rasoa Paul</p>
                                                 <p class="text-xs text-secondary-500">NIN: 1023456789014</p>

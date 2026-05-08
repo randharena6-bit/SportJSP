@@ -66,7 +66,7 @@
                                     <span class="w-3 h-3 bg-blue-500 rounded-full"></span>
                                 </div>
                                 <div class="flex items-center p-3 hover:bg-slate-50 rounded-xl cursor-pointer">
-                                    <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=10b981&color=fff" class="w-12 h-12 rounded-full mr-3">
+                                    <img src="https://ui-avatars.com/api/?name=Marie+Andria&background=2563eb&color=fff" class="w-12 h-12 rounded-full mr-3">
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Andria Marie</h4>
                                         <p class="text-sm text-slate-500">Athlète - 400m</p>
@@ -74,14 +74,14 @@
                                     <span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">2</span>
                                 </div>
                                 <div class="flex items-center p-3 hover:bg-slate-50 rounded-xl cursor-pointer">
-                                    <img src="https://ui-avatars.com/api/?name=Dr+Raso&background=f59e0b&color=fff" class="w-12 h-12 rounded-full mr-3">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Raso&background=2563eb&color=fff" class="w-12 h-12 rounded-full mr-3">
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Dr. Rasoamanana</h4>
                                         <p class="text-sm text-slate-500">Médecin du sport</p>
                                     </div>
                                 </div>
                                 <div class="flex items-center p-3 hover:bg-slate-50 rounded-xl cursor-pointer">
-                                    <img src="https://ui-avatars.com/api/?name=FMA+Admin&background=e11d48&color=fff" class="w-12 h-12 rounded-full mr-3">
+                                    <img src="https://ui-avatars.com/api/?name=FMA+Admin&background=2563eb&color=fff" class="w-12 h-12 rounded-full mr-3">
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Fédération FMA</h4>
                                         <p class="text-sm text-slate-500">Direction technique</p>

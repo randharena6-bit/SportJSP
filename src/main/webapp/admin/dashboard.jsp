@@ -62,7 +62,7 @@
                             Système opérationnel
                         </div>
                         <div class="flex items-center space-x-3">
-                            <img src="https://ui-avatars.com/api/?name=Admin+Sys&background=e11d48&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
+                            <img src="https://ui-avatars.com/api/?name=Admin+Sys&background=2563eb&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
                             <span class="font-medium text-slate-700">Admin Système</span>
                         </div>
                     </div>
