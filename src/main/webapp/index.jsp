@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SPORT CONNECT - Numérique de Madagascar 2035</title>
+    <title>SPORT CONNECT - Numérique de Madagascar 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -109,11 +109,11 @@
             <div class="text-center text-white animate-fade-in">
                     <div class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur rounded-full mb-6 border border-white/20">
                         <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
-                        <span class="text-sm font-medium">Numérique de Madagascar 2035</span>
+                        <span class="text-sm font-medium">Numérique de Madagascar 2026</span>
                     </div>
                     <h1 class="text-5xl lg:text-6xl font-bold leading-tight mb-6">
                         La Révolution Digitale du
-                        <span class="text-primary-200">Sport Malgache</span>
+                        <span class="text-primary-400">Sport Malagasy</span>
                     </h1>
                     <p class="text-xl text-primary-100 mb-8 leading-relaxed max-w-3xl mx-auto">
                         Plateforme nationale intégrée pour la gestion des athlètes, fédérations, entraîneurs et compétitions. Un écosystème connecté pour l'excellence sportive.
@@ -373,7 +373,7 @@
                 </div>
             </div>
             <div class="border-t border-secondary-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-secondary-400 text-sm">&copy; 2025 SPORT CONNECT - Numérique de Madagascar 2035. Tous droits réservés.</p>
+                <p class="text-secondary-400 text-sm">&copy; 2026 SPORT CONNECT - Numérique de Madagascar 2035. Tous droits réservés.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#" class="text-secondary-400 hover:text-white transition"><i class="fab fa-facebook"></i></a>
                     <a href="#" class="text-secondary-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
