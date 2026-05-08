@@ -28,6 +28,17 @@
         .tab-active { border-bottom: 2px solid #3b82f6; color: #3b82f6; }
         .tab-inactive { color: #64748b; }
         .tab-inactive:hover { color: #3b82f6; }
+        
+        /* Role Option Cards in Register Form */
+        .role-option input:checked + .role-option-card {
+            border-color: #3b82f6;
+            background: #eff6ff;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        }
+        .role-option input:checked + .role-option-card [class*="bg-"] {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
     </style>
 </head>
 <body class="bg-secondary-50 min-h-screen flex flex-col">
@@ -175,6 +186,61 @@
                         <form id="registerForm" class="space-y-6 hidden" action="register.jsp" method="post">
                             <input type="hidden" name="role" id="registerRole" value="athlete">
                             
+                            <!-- Role Selection Display -->
+                            <div class="bg-primary-50 border border-primary-200 rounded-xl p-4">
+                                <label class="block text-sm font-medium text-secondary-700 mb-3">S'inscrire en tant que</label>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <label class="role-option cursor-pointer">
+                                        <input type="radio" name="roleSelect" value="athlete" class="hidden" checked onchange="selectRole('athlete')">
+                                        <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="athlete">
+                                            <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+                                                <i class="fas fa-running text-blue-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-sm">Athlète</div>
+                                                <div class="text-xs text-secondary-500">Sportif</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="role-option cursor-pointer">
+                                        <input type="radio" name="roleSelect" value="coach" class="hidden" onchange="selectRole('coach')">
+                                        <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="coach">
+                                            <div class="w-10 h-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                                                <i class="fas fa-dumbbell text-emerald-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-sm">Entraîneur</div>
+                                                <div class="text-xs text-secondary-500">Coach</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="role-option cursor-pointer">
+                                        <input type="radio" name="roleSelect" value="federation" class="hidden" onchange="selectRole('federation')">
+                                        <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="federation">
+                                            <div class="w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
+                                                <i class="fas fa-landmark text-amber-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-sm">Fédération</div>
+                                                <div class="text-xs text-secondary-500">Gestion</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="role-option cursor-pointer">
+                                        <input type="radio" name="roleSelect" value="admin" class="hidden" onchange="selectRole('admin')">
+                                        <div class="role-option-card flex items-center space-x-3 p-3 rounded-lg border-2 border-transparent bg-white hover:border-primary-400 transition" data-role-option="admin">
+                                            <div class="w-10 h-10 rounded-lg bg-rose-100 flex items-center justify-center">
+                                                <i class="fas fa-shield-alt text-rose-600"></i>
+                                            </div>
+                                            <div>
+                                                <div class="font-semibold text-sm">Admin</div>
+                                                <div class="text-xs text-secondary-500">Système</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            
                             <div class="grid grid-cols-2 gap-4">
                                 <div>
                                     <label class="block text-sm font-medium text-secondary-700 mb-2">Prénom</label>
@@ -294,15 +360,22 @@
             document.getElementById('selectedRole').value = role;
             document.getElementById('registerRole').value = role;
             
-            // Update UI
+            // Update UI - Left panel role cards
             document.querySelectorAll('.role-card').forEach(card => {
                 card.classList.remove('selected');
                 card.querySelector('.role-check').classList.add('hidden');
             });
             
             const selectedCard = document.querySelector(`[data-role="${role}"]`);
-            selectedCard.classList.add('selected');
-            selectedCard.querySelector('.role-check').classList.remove('hidden');
+            if (selectedCard) {
+                selectedCard.classList.add('selected');
+                selectedCard.querySelector('.role-check').classList.remove('hidden');
+            }
+            
+            // Sync register form radio buttons
+            document.querySelectorAll('input[name="roleSelect"]').forEach(radio => {
+                radio.checked = (radio.value === role);
+            });
 
             // Show 2FA for admin
             const twoFASection = document.getElementById('twoFASection');
