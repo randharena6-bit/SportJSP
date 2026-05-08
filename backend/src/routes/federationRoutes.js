@@ -18,7 +18,10 @@ const {
   rejectLicense,
   suspendLicense,
   verifyLicenseQR,
-  getFederationStats
+  getFederationStats,
+  getFederationDashboard,
+  getFederationAthletes,
+  getFederationFinances
 } = require('../controllers/federationController');
 const { auth, checkRole, checkAdminLevel, checkFederationAccess, auditLog } = require('../middleware/auth');
 
@@ -131,6 +134,42 @@ router.get('/:id/stats',
     handleValidationErrors
   ],
   getFederationStats
+);
+
+// Get federation dashboard
+router.get('/:id/dashboard',
+  checkRole('ADMIN', 'ADMIN_FEDERATION', 'SYS_ADMIN'),
+  [
+    param('id').isUUID().withMessage('ID fédération invalide'),
+    handleValidationErrors
+  ],
+  getFederationDashboard
+);
+
+// Get federation athletes
+router.get('/:id/athletes',
+  checkRole('ADMIN', 'ADMIN_FEDERATION', 'SYS_ADMIN'),
+  [
+    param('id').isUUID().withMessage('ID fédération invalide'),
+    query('status').optional().isIn(['PENDING', 'APPROVED', 'REJECTED', 'SUSPENDED']),
+    query('clubId').optional().isUUID(),
+    query('search').optional().trim(),
+    query('page').optional().isInt({ min: 1 }),
+    query('limit').optional().isInt({ min: 1, max: 100 }),
+    handleValidationErrors
+  ],
+  getFederationAthletes
+);
+
+// Get federation finances
+router.get('/:id/finances',
+  checkRole('ADMIN', 'ADMIN_FEDERATION', 'SYS_ADMIN'),
+  [
+    param('id').isUUID().withMessage('ID fédération invalide'),
+    query('year').optional().isInt({ min: 2020, max: 2030 }),
+    handleValidationErrors
+  ],
+  getFederationFinances
 );
 
 // ==================== CLUB MANAGEMENT ====================

@@ -1129,6 +1129,364 @@ async function generateLicenseNumber(federationId, season) {
   return `${acronym}-${year}-${sequence}`;
 }
 
+// ==================== FEDERATION DASHBOARD ====================
+
+// Get federation dashboard data
+exports.getFederationDashboard = async (req, res) => {
+  try {
+    const { federationId } = req.params;
+
+    // Check access
+    if (req.user.role === 'ADMIN_FEDERATION' && req.user.federationId !== federationId) {
+      return res.status(403).json({
+        success: false,
+        message: 'Accès interdit à ce tableau de bord'
+      });
+    }
+
+    // Get current season
+    const currentYear = new Date().getFullYear();
+    const season = `${currentYear}-${currentYear + 1}`;
+
+    // Stats
+    const stats = {};
+
+    // Licensed athletes count
+    const athleteCount = await pool.query(`
+      SELECT COUNT(*) as count
+      FROM licenses
+      WHERE federation_id = $1 AND status = 'APPROVED' AND season = $2
+    `, [federationId, season]);
+    stats.licensedAthletes = parseInt(athleteCount.rows[0].count);
+
+    // Club count
+    const clubCount = await pool.query(`
+      SELECT COUNT(*) as count FROM clubs
+      WHERE federation_id = $1 AND is_active = true
+    `, [federationId]);
+    stats.clubs = parseInt(clubCount.rows[0].count);
+
+    // Active licenses
+    const activeLicenses = await pool.query(`
+      SELECT COUNT(*) as count
+      FROM licenses
+      WHERE federation_id = $1 AND status = 'APPROVED'
+      AND expiry_date >= CURRENT_DATE
+    `, [federationId]);
+    stats.activeLicenses = parseInt(activeLicenses.rows[0].count);
+
+    // Revenue
+    const revenue = await pool.query(`
+      SELECT COALESCE(SUM(amount), 0) as total
+      FROM payments p
+      JOIN licenses l ON p.license_id = l.id
+      WHERE l.federation_id = $1 AND p.status = 'COMPLETED'
+      AND l.season = $2
+    `, [federationId, season]);
+    stats.revenue = parseInt(revenue.rows[0].total);
+
+    // Pending approvals
+    const pendingApprovals = await pool.query(`
+      SELECT
+        l.id,
+        l.license_number,
+        l.season,
+        l.status,
+        l.created_at,
+        a.first_name as athlete_first_name,
+        a.last_name as athlete_last_name,
+        c.name as club_name,
+        'Nouvelle licence' as type
+      FROM licenses l
+      JOIN athletes a ON l.athlete_id = a.user_id
+      LEFT JOIN clubs c ON l.club_id = c.id
+      WHERE l.federation_id = $1 AND l.status = 'PENDING'
+      ORDER BY l.created_at DESC
+      LIMIT 10
+    `, [federationId]);
+
+    // Upcoming competitions
+    const upcomingCompetitions = await pool.query(`
+      SELECT
+        c.id,
+        c.name,
+        c.start_date,
+        c.end_date,
+        c.venue,
+        c.status,
+        COUNT(cp.id) as registered_count
+      FROM competitions c
+      LEFT JOIN competition_participants cp ON cp.competition_id = c.id
+      WHERE c.federation_id = $1 AND c.start_date >= CURRENT_DATE
+      GROUP BY c.id
+      ORDER BY c.start_date ASC
+      LIMIT 5
+    `, [federationId]);
+
+    // Alerts
+    const alerts = [];
+
+    // Incomplete files (missing medical certificate)
+    const incompleteFiles = await pool.query(`
+      SELECT COUNT(*) as count
+      FROM licenses l
+      JOIN athletes a ON l.athlete_id = a.user_id
+      WHERE l.federation_id = $1 AND l.status = 'APPROVED'
+      AND l.medical_clearance = false
+    `, [federationId]);
+
+    if (parseInt(incompleteFiles.rows[0].count) > 0) {
+      alerts.push({
+        type: 'warning',
+        message: `${incompleteFiles.rows[0].count} dossiers incomplets`,
+        detail: 'Athlètes sans certificat médical',
+        icon: 'user-times'
+      });
+    }
+
+    // Anomalies detected
+    const anomalies = await pool.query(`
+      SELECT COUNT(*) as count
+      FROM anomaly_alerts aa
+      JOIN athletes a ON aa.athlete_id = a.user_id
+      JOIN clubs c ON a.current_club_id = c.id
+      WHERE c.federation_id = $1 AND aa.status = 'PENDING'
+    `, [federationId]);
+
+    if (parseInt(anomalies.rows[0].count) > 0) {
+      alerts.push({
+        type: 'critical',
+        message: 'Anomalie détectée',
+        detail: 'Performance suspecte - IA Alert',
+        icon: 'exclamation-circle'
+      });
+    }
+
+    // License evolution chart data
+    const licenseEvolution = await pool.query(`
+      SELECT
+        DATE_TRUNC('month', created_at) as month,
+        COUNT(*) as count
+      FROM licenses
+      WHERE federation_id = $1
+      AND created_at >= CURRENT_DATE - INTERVAL '6 months'
+      AND status = 'APPROVED'
+      GROUP BY DATE_TRUNC('month', created_at)
+      ORDER BY month ASC
+    `, [federationId]);
+
+    res.status(200).json({
+      success: true,
+      data: {
+        stats,
+        pendingApprovals: pendingApprovals.rows,
+        upcomingCompetitions: upcomingCompetitions.rows,
+        alerts,
+        licenseEvolution: licenseEvolution.rows,
+        digitalizationRate: 85 // Calculated metric
+      }
+    });
+  } catch (error) {
+    console.error('Get federation dashboard error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Erreur lors de la récupération du tableau de bord'
+    });
+  }
+};
+
+// ==================== FEDERATION ATHLETES ====================
+
+// Get all athletes in federation
+exports.getFederationAthletes = async (req, res) => {
+  try {
+    const { federationId } = req.params;
+    const { status, category, clubId, search, page = 1, limit = 20 } = req.query;
+
+    // Check access
+    if (req.user.role === 'ADMIN_FEDERATION' && req.user.federationId !== federationId) {
+      return res.status(403).json({
+        success: false,
+        message: 'Accès interdit'
+      });
+    }
+
+    let conditions = ['c.federation_id = $1'];
+    const params = [federationId];
+    let paramIndex = 2;
+
+    if (status) {
+      conditions.push(`EXISTS (
+        SELECT 1 FROM licenses l
+        WHERE l.athlete_id = a.user_id
+        AND l.federation_id = $1
+        AND l.status = $${paramIndex}
+      )`);
+      params.push(status.toUpperCase());
+      paramIndex++;
+    }
+
+    if (clubId) {
+      conditions.push(`a.current_club_id = $${paramIndex}`);
+      params.push(clubId);
+      paramIndex++;
+    }
+
+    if (search) {
+      conditions.push(`(a.first_name ILIKE $${paramIndex} OR a.last_name ILIKE $${paramIndex} OR u.nin ILIKE $${paramIndex})`);
+      params.push(`%${search}%`);
+      paramIndex++;
+    }
+
+    const whereClause = conditions.join(' AND ');
+
+    // Get total count
+    const countQuery = `
+      SELECT COUNT(*) as total
+      FROM athletes a
+      JOIN users u ON a.user_id = u.id
+      LEFT JOIN clubs c ON a.current_club_id = c.id
+      WHERE ${whereClause}
+    `;
+    const countResult = await pool.query(countQuery, params);
+    const total = parseInt(countResult.rows[0].total);
+
+    // Get athletes
+    const athletesQuery = `
+      SELECT
+        a.user_id,
+        a.first_name,
+        a.last_name,
+        a.birth_date,
+        a.gender,
+        a.sport_type,
+        a.position,
+        u.email,
+        u.nin,
+        c.name as club_name,
+        c.id as club_id,
+        (SELECT l.status FROM licenses l
+         WHERE l.athlete_id = a.user_id AND l.federation_id = $1
+         ORDER BY l.created_at DESC LIMIT 1) as license_status,
+        (SELECT te.overall_score FROM talent_evaluations te
+         WHERE te.athlete_id = a.user_id
+         ORDER BY te.evaluation_date DESC LIMIT 1) as talent_score,
+        (SELECT te.potential FROM talent_evaluations te
+         WHERE te.athlete_id = a.user_id
+         ORDER BY te.evaluation_date DESC LIMIT 1) as talent_potential
+      FROM athletes a
+      JOIN users u ON a.user_id = u.id
+      LEFT JOIN clubs c ON a.current_club_id = c.id
+      WHERE ${whereClause}
+      ORDER BY a.last_name, a.first_name
+      LIMIT $${paramIndex} OFFSET $${paramIndex + 1}
+    `;
+
+    params.push(parseInt(limit), (parseInt(page) - 1) * parseInt(limit));
+    const athletesResult = await pool.query(athletesQuery, params);
+
+    res.status(200).json({
+      success: true,
+      data: {
+        athletes: athletesResult.rows,
+        pagination: {
+          total,
+          page: parseInt(page),
+          limit: parseInt(limit),
+          totalPages: Math.ceil(total / limit)
+        }
+      }
+    });
+  } catch (error) {
+    console.error('Get federation athletes error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Erreur lors de la récupération des athlètes'
+    });
+  }
+};
+
+// ==================== FEDERATION FINANCES ====================
+
+// Get federation financial data
+exports.getFederationFinances = async (req, res) => {
+  try {
+    const { federationId } = req.params;
+    const { year = new Date().getFullYear() } = req.query;
+
+    // Check access
+    if (req.user.role === 'ADMIN_FEDERATION' && req.user.federationId !== federationId) {
+      return res.status(403).json({
+        success: false,
+        message: 'Accès interdit'
+      });
+    }
+
+    const season = `${year}-${year + 1}`;
+
+    // Revenue stats
+    const revenueStats = await pool.query(`
+      SELECT
+        COALESCE(SUM(amount), 0) as total_revenue,
+        COALESCE(SUM(amount) FILTER (WHERE provider = 'MVOLA'), 0) as mvola_revenue,
+        COALESCE(SUM(amount) FILTER (WHERE provider = 'ORANGE_MONEY'), 0) as orange_revenue,
+        COALESCE(SUM(amount) FILTER (WHERE provider = 'AIRTEL_MONEY'), 0) as airtel_revenue,
+        COUNT(*) FILTER (WHERE provider = 'MVOLA') as mvola_count,
+        COUNT(*) FILTER (WHERE provider = 'ORANGE_MONEY') as orange_count,
+        COUNT(*) FILTER (WHERE provider = 'AIRTEL_MONEY') as airtel_count
+      FROM payments p
+      JOIN licenses l ON p.license_id = l.id
+      WHERE l.federation_id = $1 AND l.season = $2 AND p.status = 'COMPLETED'
+    `, [federationId, season]);
+
+    // Monthly revenue chart data
+    const monthlyRevenue = await pool.query(`
+      SELECT
+        DATE_TRUNC('month', p.paid_at) as month,
+        SUM(p.amount) as amount
+      FROM payments p
+      JOIN licenses l ON p.license_id = l.id
+      WHERE l.federation_id = $1 AND l.season = $2 AND p.status = 'COMPLETED'
+      GROUP BY DATE_TRUNC('month', p.paid_at)
+      ORDER BY month ASC
+    `, [federationId, season]);
+
+    // Recent transactions
+    const recentTransactions = await pool.query(`
+      SELECT
+        p.id,
+        p.amount,
+        p.provider,
+        p.status,
+        p.paid_at,
+        a.first_name || ' ' || a.last_name as athlete_name,
+        l.license_number,
+        l.season
+      FROM payments p
+      JOIN licenses l ON p.license_id = l.id
+      JOIN athletes a ON l.athlete_id = a.user_id
+      WHERE l.federation_id = $1
+      ORDER BY p.created_at DESC
+      LIMIT 20
+    `, [federationId]);
+
+    res.status(200).json({
+      success: true,
+      data: {
+        stats: revenueStats.rows[0],
+        monthlyRevenue: monthlyRevenue.rows,
+        recentTransactions: recentTransactions.rows
+      }
+    });
+  } catch (error) {
+    console.error('Get federation finances error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Erreur lors de la récupération des données financières'
+    });
+  }
+};
+
 // ==================== FEDERATION REPORTS ====================
 
 // Get federation statistics
