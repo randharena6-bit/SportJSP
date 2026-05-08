@@ -13,7 +13,7 @@ const validateRegister = [
   body('nin').trim().notEmpty().withMessage('Le NIN est requis'),
   body('phone').trim().notEmpty().withMessage('Le téléphone est requis'),
   body('password').isLength({ min: 8 }).withMessage('Le mot de passe doit contenir au moins 8 caractères'),
-  body('role').isIn(['athlete', 'coach', 'federation', 'admin']).withMessage('Rôle invalide'),
+  body('role').isIn(['athlete', 'coach', 'federation', 'admin', 'ATHLETE', 'COACH', 'ADMIN_FEDERATION', 'ADMIN']).withMessage('Rôle invalide'),
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -31,7 +31,7 @@ const validateRegister = [
 const validateLogin = [
   body('username').trim().notEmpty().withMessage('Email/NIN est requis'),
   body('password').notEmpty().withMessage('Le mot de passe est requis'),
-  body('role').isIn(['athlete', 'coach', 'federation', 'admin']).withMessage('Rôle invalide'),
+  body('role').isIn(['athlete', 'coach', 'federation', 'admin', 'ATHLETE', 'COACH', 'ADMIN_FEDERATION', 'ADMIN']).withMessage('Rôle invalide'),
   (req, res, next) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {

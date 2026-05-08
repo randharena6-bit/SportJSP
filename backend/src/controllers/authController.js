@@ -17,6 +17,9 @@ exports.register = async (req, res) => {
   try {
     const { firstname, lastname, email, nin, phone, password, confirmPassword, role } = req.body;
 
+    // Convert role to uppercase for database
+    const roleUpper = role ? role.toUpperCase() : 'ATHLETE';
+
     // Validation
     if (!firstname || !lastname || !email || !nin || !phone || !password) {
       return res.status(400).json({
@@ -62,34 +65,34 @@ exports.register = async (req, res) => {
 
       // Insert user
       const userResult = await client.query(
-        `INSERT INTO users (email, nin, password, role, is_active, created_at, updated_at)
-         VALUES ($1, $2, $3, $4, true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
-         RETURNING id, email, role`,
-        [email, nin, hashedPassword, role]
+        `INSERT INTO users (email, nin, password_hash, role_id, is_active, created_at, updated_at)
+         VALUES ($1, $2, $3, (SELECT id FROM roles WHERE name = $4), true, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)
+         RETURNING id, email, (SELECT name FROM roles WHERE id = role_id) as role`,
+        [email, nin, hashedPassword, roleUpper]
       );
 
       const userId = userResult.rows[0].id;
 
       // Insert role-specific profile based on role
-      if (role === 'athlete') {
+      if (roleUpper === 'ATHLETE') {
         await client.query(
           `INSERT INTO athletes (user_id, first_name, last_name, birth_date, gender, created_at, updated_at)
            VALUES ($1, $2, $3, NULL, 'M', CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
           [userId, firstname, lastname]
         );
-      } else if (role === 'coach') {
+      } else if (roleUpper === 'COACH') {
         await client.query(
           `INSERT INTO coaches (user_id, first_name, last_name, specialization, created_at, updated_at)
            VALUES ($1, $2, $3, NULL, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
           [userId, firstname, lastname]
         );
-      } else if (role === 'federation') {
+      } else if (roleUpper === 'ADMIN_FEDERATION') {
         await client.query(
           `INSERT INTO federation_admins (user_id, first_name, last_name, created_at, updated_at)
            VALUES ($1, $2, $3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
           [userId, firstname, lastname]
         );
-      } else if (role === 'admin') {
+      } else if (roleUpper === 'ADMIN') {
         await client.query(
           `INSERT INTO admins (user_id, first_name, last_name, created_at, updated_at)
            VALUES ($1, $2, $3, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP)`,
@@ -136,6 +139,9 @@ exports.login = async (req, res) => {
   try {
     const { username, password, role } = req.body;
 
+    // Convert role to uppercase for database
+    const roleUpper = role ? role.toUpperCase() : 'ATHLETE';
+
     // Validation
     if (!username || !password) {
       return res.status(400).json({
@@ -146,26 +152,27 @@ exports.login = async (req, res) => {
 
     // Find user by email or NIN
     const userResult = await pool.query(
-      `SELECT u.id, u.email, u.nin, u.password, u.role, u.is_active,
+      `SELECT u.id, u.email, u.nin, u.password_hash, r.name as role, u.is_active,
               CASE 
-                WHEN u.role = 'athlete' THEN a.first_name
-                WHEN u.role = 'coach' THEN c.first_name
-                WHEN u.role = 'federation' THEN f.first_name
-                WHEN u.role = 'admin' THEN ad.first_name
+                WHEN r.name = 'ATHLETE' THEN a.first_name
+                WHEN r.name = 'COACH' THEN c.first_name
+                WHEN r.name = 'ADMIN_FEDERATION' THEN f.first_name
+                WHEN r.name = 'ADMIN' THEN ad.first_name
               END as firstname,
               CASE 
-                WHEN u.role = 'athlete' THEN a.last_name
-                WHEN u.role = 'coach' THEN c.last_name
-                WHEN u.role = 'federation' THEN f.last_name
-                WHEN u.role = 'admin' THEN ad.last_name
+                WHEN r.name = 'ATHLETE' THEN a.last_name
+                WHEN r.name = 'COACH' THEN c.last_name
+                WHEN r.name = 'ADMIN_FEDERATION' THEN f.last_name
+                WHEN r.name = 'ADMIN' THEN ad.last_name
               END as lastname
        FROM users u
-       LEFT JOIN athletes a ON u.id = a.user_id AND u.role = 'athlete'
-       LEFT JOIN coaches c ON u.id = c.user_id AND u.role = 'coach'
-       LEFT JOIN federation_admins f ON u.id = f.user_id AND u.role = 'federation'
-       LEFT JOIN admins ad ON u.id = ad.user_id AND u.role = 'admin'
-       WHERE (u.email = $1 OR u.nin = $1) AND u.role = $2`,
-      [username, role]
+       JOIN roles r ON u.role_id = r.id
+       LEFT JOIN athletes a ON u.id = a.user_id AND r.name = 'ATHLETE'
+       LEFT JOIN coaches c ON u.id = c.user_id AND r.name = 'COACH'
+       LEFT JOIN federation_admins f ON u.id = f.user_id AND r.name = 'ADMIN_FEDERATION'
+       LEFT JOIN admins ad ON u.id = ad.user_id AND r.name = 'ADMIN'
+       WHERE (u.email = $1 OR u.nin = $1) AND r.name = $2`,
+      [username, roleUpper]
     );
 
     if (userResult.rows.length === 0) {
@@ -186,7 +193,7 @@ exports.login = async (req, res) => {
     }
 
     // Verify password
-    const isValidPassword = await comparePassword(password, user.password);
+    const isValidPassword = await comparePassword(password, user.password_hash);
 
     if (!isValidPassword) {
       return res.status(401).json({

@@ -143,7 +143,7 @@
                         </div>
 
                         <!-- Login Form -->
-                        <form id="loginForm" class="space-y-6" action="dashboard.jsp" method="post">
+                        <form id="loginForm" class="space-y-6" onsubmit="handleLogin(event)">
                             <input type="hidden" name="role" id="selectedRole" value="athlete">
                             
                             <div>
@@ -183,7 +183,7 @@
                         </form>
 
                         <!-- Register Form -->
-                        <form id="registerForm" class="space-y-6 hidden" action="register.jsp" method="post">
+                        <form id="registerForm" class="space-y-6 hidden" onsubmit="handleRegister(event)">
                             <input type="hidden" name="role" id="registerRole" value="athlete">
                             
                             <!-- Role Selection Display -->
@@ -353,7 +353,85 @@
     </div>
 
     <script>
+        // Force refresh - v20250108_1059
+        console.log('Loading login script with API URL: http://localhost:3003/api/auth');
+        const API_BASE_URL = 'http://localhost:3003/api/auth';
         let currentRole = 'athlete';
+
+        async function handleLogin(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = {
+                username: formData.get('username'),
+                password: formData.get('password'),
+                role: formData.get('role')
+            };
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/login`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    localStorage.setItem('token', result.token);
+                    localStorage.setItem('user', JSON.stringify(result.user));
+                    alert('Connexion réussie !');
+                    window.location.href = 'dashboard.jsp';
+                } else {
+                    alert(result.message || 'Erreur lors de la connexion');
+                }
+            } catch (error) {
+                console.error('Login error:', error);
+                alert('Erreur de connexion au serveur');
+            }
+        }
+
+        async function handleRegister(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = {
+                firstname: formData.get('firstname'),
+                lastname: formData.get('lastname'),
+                email: formData.get('email'),
+                nin: formData.get('nin'),
+                phone: formData.get('phone'),
+                password: formData.get('password'),
+                confirmPassword: formData.get('confirmPassword'),
+                role: formData.get('role')
+            };
+
+            try {
+                const response = await fetch(`${API_BASE_URL}/register`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    localStorage.setItem('token', result.token);
+                    localStorage.setItem('user', JSON.stringify(result.user));
+                    alert('Compte créé avec succès !');
+                    window.location.href = 'dashboard.jsp';
+                } else {
+                    alert(result.message || 'Erreur lors de l\'inscription');
+                }
+            } catch (error) {
+                console.error('Register error:', error);
+                alert('Erreur de connexion au serveur');
+            }
+        }
 
         function selectRole(role) {
             currentRole = role;
