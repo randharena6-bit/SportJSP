@@ -2,6 +2,9 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const authRoutes = require('./src/routes/authRoutes');
+const adminRoutes = require('./src/routes/adminRoutes');
+const federationRoutes = require('./src/routes/federationRoutes');
+const reportRoutes = require('./src/routes/reportRoutes');
 
 dotenv.config();
 
@@ -20,6 +23,9 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/admin', adminRoutes);
+app.use('/api/federations', federationRoutes);
+app.use('/api/reports', reportRoutes);
 
 // Health check route
 app.get('/health', (req, res) => {
@@ -32,12 +38,36 @@ app.get('/health', (req, res) => {
 
 // Root route
 app.get('/', (req, res) => {
-  res.json({ 
+  res.json({
     message: 'SPORT CONNECT Backend API',
     version: '1.0.0',
     endpoints: {
       auth: '/api/auth',
+      admin: '/api/admin',
+      federations: '/api/federations',
+      reports: '/api/reports',
       health: '/health'
+    },
+    documentation: {
+      admin: {
+        users: '/api/admin/users',
+        stats: '/api/admin/stats',
+        auditLogs: '/api/admin/audit-logs',
+        roles: '/api/admin/roles'
+      },
+      federations: {
+        list: '/api/federations',
+        clubs: '/api/federations/clubs',
+        licenses: '/api/federations/licenses'
+      },
+      reports: {
+        dashboard: '/api/reports/dashboard',
+        users: '/api/reports/users',
+        licenses: '/api/reports/licenses',
+        financial: '/api/reports/financial',
+        athletes: '/api/reports/athletes',
+        export: '/api/reports/export'
+      }
     }
   });
 });
