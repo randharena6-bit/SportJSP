@@ -59,11 +59,11 @@
                     </a>
                     <a href="../notifications/notifications.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium">
                         <i class="fas fa-bell w-6"></i>Notifications
-                        <span class="ml-auto bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">3</span>
+                        <span class="ml-auto bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full">3</span>
                     </a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-secondary-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-red-600 font-medium transition">
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-blue-600 font-medium transition">
                         <i class="fas fa-sign-out-alt w-6"></i>Déconnexion
                     </a>
                 </div>

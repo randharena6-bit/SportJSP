@@ -45,10 +45,10 @@
                     <a href="../competitions/competitions.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-trophy w-6"></i>Compétitions</a>
                     <a href="sante.jsp" class="sidebar-link active flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-heartbeat w-6"></i>Santé & Performance</a>
                     <a href="../medias/medias.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-video w-6"></i>Médias & E-sport</a>
-                    <a href="../notifications/notifications.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-bell w-6"></i>Notifications<span class="ml-auto bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">3</span></a>
+                    <a href="../notifications/notifications.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-bell w-6"></i>Notifications<span class="ml-auto bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full">3</span></a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-secondary-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -110,8 +110,8 @@
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
                         <div class="flex items-center justify-between mb-4">
-                            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                                <i class="fas fa-lungs text-red-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-lungs text-blue-600 text-xl"></i>
                             </div>
                             <span class="text-blue-500 text-sm font-medium">+2%</span>
                         </div>
@@ -127,7 +127,7 @@
                         <canvas id="weightChart" height="250"></canvas>
                     </div>
                     <div class="bg-white rounded-2xl shadow-sm p-6">
-                        <h3 class="text-lg font-bold text-secondary-800 mb-4"><i class="fas fa-heartbeat text-red-500 mr-2"></i>Fréquence Cardiaque au Repos</h3>
+                        <h3 class="text-lg font-bold text-secondary-800 mb-4"><i class="fas fa-heartbeat text-blue-500 mr-2"></i>Fréquence Cardiaque au Repos</h3>
                         <canvas id="heartRateChart" height="250"></canvas>
                     </div>
                 </div>
@@ -135,12 +135,12 @@
                 <!-- Injury Log -->
                 <div class="bg-white rounded-2xl shadow-sm mt-8">
                     <div class="p-6 border-b border-secondary-100 flex items-center justify-between">
-                        <h2 class="text-lg font-bold text-secondary-800"><i class="fas fa-notes-medical text-red-500 mr-2"></i>Journal de Blessures</h2>
-                        <button onclick="openInjuryModal()" class="px-4 py-2 bg-red-100 text-red-700 rounded-lg font-medium hover:bg-red-200 transition"><i class="fas fa-plus mr-2"></i>Déclarer une blessure</button>
+                        <h2 class="text-lg font-bold text-secondary-800"><i class="fas fa-notes-medical text-blue-500 mr-2"></i>Journal de Blessures</h2>
+                        <button onclick="openInjuryModal()" class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition"><i class="fas fa-plus mr-2"></i>Déclarer une blessure</button>
                     </div>
                     <div class="p-6">
                         <div class="space-y-4">
-                            <div class="flex items-start p-4 bg-green-50 rounded-xl border-l-4 border-green-500">
+                            <div class="flex items-start p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
                                 <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
                                     <i class="fas fa-check-circle text-blue-600 text-xl"></i>
                                 </div>

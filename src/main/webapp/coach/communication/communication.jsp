@@ -32,7 +32,7 @@
                     <a href="communication.jsp" class="sidebar-link active flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-comments w-6"></i>Communication</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -71,7 +71,7 @@
                                         <h4 class="font-semibold text-slate-800">Andria Marie</h4>
                                         <p class="text-sm text-slate-500">Athlète - 400m</p>
                                     </div>
-                                    <span class="px-2 py-1 bg-red-100 text-red-700 rounded text-xs">2</span>
+                                    <span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">2</span>
                                 </div>
                                 <div class="flex items-center p-3 hover:bg-slate-50 rounded-xl cursor-pointer">
                                     <img src="https://ui-avatars.com/api/?name=Dr+Raso&background=2563eb&color=fff" class="w-12 h-12 rounded-full mr-3">

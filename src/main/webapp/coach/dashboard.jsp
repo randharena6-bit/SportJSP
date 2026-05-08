@@ -38,7 +38,7 @@
                     <a href="communication/communication.jsp" class="sidebar-link flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-comments w-6"></i>Communication</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -71,7 +71,7 @@
                         <p class="text-2xl font-bold text-slate-800">21</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-band-aid text-red-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-band-aid text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Blessés</h3>
                         <p class="text-2xl font-bold text-slate-800">2</p>
                     </div>
@@ -123,8 +123,8 @@
                         </div>
                         <div class="p-6">
                             <div class="space-y-4">
-                                <div class="flex items-start p-4 bg-red-50 rounded-xl border-l-4 border-red-500">
-                                    <i class="fas fa-band-aid text-red-500 mt-1 mr-3"></i>
+                                <div class="flex items-start p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
+                                    <i class="fas fa-band-aid text-blue-500 mt-1 mr-3"></i>
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Andria Marie - Blessure</h4>
                                         <p class="text-sm text-slate-600 mt-1">Tension ischio-jambier signalée hier</p>
@@ -137,7 +137,7 @@
                                         <p class="text-sm text-slate-600 mt-1">Chrono 100m dégradé de 0.3s</p>
                                     </div>
                                 </div>
-                                <div class="flex items-start p-4 bg-green-50 rounded-xl border-l-4 border-green-500">
+                                <div class="flex items-start p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
                                     <i class="fas fa-arrow-up text-blue-500 mt-1 mr-3"></i>
                                     <div class="flex-1">
                                         <h4 class="font-semibold text-slate-800">Rakoto Jean - Progression</h4>

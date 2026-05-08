@@ -31,7 +31,7 @@
                     <a href="../communication/communication.jsp" class="sidebar-link flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-comments w-6"></i>Communication</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -80,7 +80,7 @@
                             </div>
                             <div class="flex gap-2">
                                 <button class="px-3 py-1 bg-white text-slate-600 rounded-lg text-sm hover:bg-slate-50"><i class="fas fa-edit"></i></button>
-                                <button class="px-3 py-1 bg-white text-red-600 rounded-lg text-sm hover:bg-red-50"><i class="fas fa-trash"></i></button>
+                                <button class="px-3 py-1 bg-white text-blue-600 rounded-lg text-sm hover:bg-blue-50"><i class="fas fa-trash"></i></button>
                             </div>
                         </div>
                         <div class="flex items-center p-4 bg-blue-50 rounded-xl border-l-4 border-blue-500">
@@ -94,7 +94,7 @@
                             </div>
                             <div class="flex gap-2">
                                 <button class="px-3 py-1 bg-white text-slate-600 rounded-lg text-sm hover:bg-slate-50"><i class="fas fa-edit"></i></button>
-                                <button class="px-3 py-1 bg-white text-red-600 rounded-lg text-sm hover:bg-red-50"><i class="fas fa-trash"></i></button>
+                                <button class="px-3 py-1 bg-white text-blue-600 rounded-lg text-sm hover:bg-blue-50"><i class="fas fa-trash"></i></button>
                             </div>
                         </div>
                     </div>

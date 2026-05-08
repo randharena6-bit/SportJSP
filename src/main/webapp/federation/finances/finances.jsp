@@ -35,7 +35,7 @@
                     <a href="../rapports/rapports.jsp" class="sidebar-link flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-chart-pie w-6"></i>Rapports & Stats</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -48,7 +48,7 @@
                         <p class="text-slate-500 text-sm">Suivi des paiements et audit des transactions</p>
                     </div>
                     <div class="flex gap-3">
-                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-green-200"><i class="fas fa-file-export mr-2"></i>Export financier</button>
+                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-file-export mr-2"></i>Export financier</button>
                         <button class="px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700"><i class="fas fa-cog mr-2"></i>Paramètres tarifs</button>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         <p class="text-2xl font-bold text-slate-800">623</p>
                     </div>
                     <div class="bg-white rounded-2xl p-6 shadow-sm">
-                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-mobile-alt text-red-600 text-xl"></i></div>
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4"><i class="fas fa-mobile-alt text-blue-600 text-xl"></i></div>
                         <h3 class="text-slate-500 text-sm">Transactions Airtel</h3>
                         <p class="text-2xl font-bold text-slate-800">312</p>
                     </div>
@@ -134,7 +134,7 @@
                                     <td class="py-4 px-6 text-slate-600">06/05/2025 11:45</td>
                                     <td class="py-4 px-6 font-medium text-slate-800">Raso Paul</td>
                                     <td class="py-4 px-6 text-slate-700">Inscription Championnat</td>
-                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-red-100 text-red-700 rounded text-sm">Airtel</span></td>
+                                    <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Airtel</span></td>
                                     <td class="py-4 px-6 font-semibold text-slate-800">10,000 Ar</td>
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-sm">Confirmé</span></td>
                                 </tr>

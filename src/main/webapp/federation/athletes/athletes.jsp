@@ -47,7 +47,7 @@
                     <a href="../rapports/rapports.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-chart-pie w-6"></i>Rapports & Stats</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-secondary-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -60,7 +60,7 @@
                         <p class="text-secondary-500 text-sm">Base de données nationale des licenciés</p>
                     </div>
                     <div class="flex items-center space-x-3">
-                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-green-200 transition"><i class="fas fa-file-export mr-2"></i>Export Excel</button>
+                        <button class="px-4 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200 transition"><i class="fas fa-file-export mr-2"></i>Export Excel</button>
                         <button class="px-4 py-2 bg-primary-600 text-white rounded-lg font-medium hover:bg-primary-700 transition"><i class="fas fa-plus mr-2"></i>Ajouter</button>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                                     <td class="py-4 px-6"><span class="px-2 py-1 bg-secondary-100 text-secondary-700 rounded-lg text-sm font-semibold">-- Éval.</span></td>
                                     <td class="py-4 px-6">
                                         <button class="text-blue-600 hover:text-blue-700 mr-3" title="Valider"><i class="fas fa-check"></i></button>
-                                        <button class="text-red-600 hover:text-red-700 mr-3" title="Rejeter"><i class="fas fa-times"></i></button>
+                                        <button class="text-blue-600 hover:text-blue-700 mr-3" title="Rejeter"><i class="fas fa-times"></i></button>
                                         <button class="text-primary-600 hover:text-primary-700"><i class="fas fa-eye"></i></button>
                                     </td>
                                 </tr>

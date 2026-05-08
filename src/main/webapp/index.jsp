@@ -267,8 +267,8 @@
                     <p class="text-secondary-500">Talent Scoring System et détection des performances exceptionnelles</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition">
-                    <div class="w-14 h-14 rounded-xl bg-red-100 flex items-center justify-center mb-6">
-                        <i class="fas fa-heartbeat text-red-600 text-xl"></i>
+                    <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-6">
+                        <i class="fas fa-heartbeat text-blue-600 text-xl"></i>
                     </div>
                     <h3 class="text-xl font-bold text-secondary-800 mb-3">Santé & Performance</h3>
                     <p class="text-secondary-500">Suivi médical biométrique avec dossier numérique sécurisé</p>

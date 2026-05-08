@@ -49,7 +49,7 @@
                         <div>
                             <p class="font-semibold text-secondary-800 text-sm">Jean Rakoto</p>
                             <p class="text-xs text-secondary-500">Athlète - Athlétisme</p>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-green-800 mt-1">
+                            <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800 mt-1">
                                 <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-1"></span>Licence Active
                             </span>
                         </div>
@@ -78,12 +78,12 @@
                     </a>
                     <a href="notifications/notifications.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium">
                         <i class="fas fa-bell w-6"></i>Notifications
-                        <span class="ml-auto bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">3</span>
+                        <span class="ml-auto bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full">3</span>
                     </a>
                 </nav>
 
                 <div class="mt-8 pt-6 border-t border-secondary-200">
-                    <a href="../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-red-600 font-medium transition">
+                    <a href="../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-blue-600 font-medium transition">
                         <i class="fas fa-sign-out-alt w-6"></i>Déconnexion
                     </a>
                 </div>
@@ -102,7 +102,7 @@
                     <div class="flex items-center space-x-4">
                         <button class="relative p-2 text-secondary-400 hover:text-secondary-600 transition">
                             <i class="fas fa-bell text-xl"></i>
-                            <span class="absolute top-0 right-0 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center notification-badge">3</span>
+                            <span class="absolute top-0 right-0 w-5 h-5 bg-blue-500 text-white text-xs rounded-full flex items-center justify-center notification-badge">3</span>
                         </button>
                         <button class="relative p-2 text-secondary-400 hover:text-secondary-600 transition">
                             <i class="fas fa-envelope text-xl"></i>
@@ -253,7 +253,7 @@
                                 </div>
                                 <div class="flex justify-between text-sm mt-2">
                                     <span class="text-primary-100">Progression:</span>
-                                    <span class="font-semibold text-green-300">+5.2%</span>
+                                    <span class="font-semibold text-blue-300">+5.2%</span>
                                 </div>
                             </div>
                         </div>
@@ -264,12 +264,12 @@
                                 <h2 class="text-lg font-bold text-secondary-800">
                                     <i class="fas fa-bell text-primary-500 mr-2"></i>Alertes
                                 </h2>
-                                <span class="bg-red-100 text-red-600 text-xs px-2 py-1 rounded-full font-medium">3 nouvelles</span>
+                                <span class="bg-blue-100 text-blue-600 text-xs px-2 py-1 rounded-full font-medium">3 nouvelles</span>
                             </div>
                             <div class="p-4">
                                 <div class="space-y-3">
-                                    <div class="flex items-start space-x-3 p-3 bg-red-50 rounded-xl border-l-4 border-red-500">
-                                        <i class="fas fa-exclamation-circle text-red-500 mt-1"></i>
+                                    <div class="flex items-start space-x-3 p-3 bg-blue-50 rounded-xl border-l-4 border-blue-500">
+                                        <i class="fas fa-exclamation-circle text-blue-500 mt-1"></i>
                                         <div>
                                             <p class="text-sm font-medium text-secondary-800">Renouvellement licence</p>
                                             <p class="text-xs text-secondary-500">Votre licence expire dans 45 jours</p>
@@ -282,7 +282,7 @@
                                             <p class="text-xs text-secondary-500">Championnat national ouvert</p>
                                         </div>
                                     </div>
-                                    <div class="flex items-start space-x-3 p-3 bg-green-50 rounded-xl border-l-4 border-green-500">
+                                    <div class="flex items-start space-x-3 p-3 bg-blue-50 rounded-xl border-l-4 border-blue-500">
                                         <i class="fas fa-check-circle text-blue-500 mt-1"></i>
                                         <div>
                                             <p class="text-sm font-medium text-secondary-800">Paiement confirmé</p>
@@ -311,8 +311,8 @@
                                     <span class="font-medium text-secondary-700">Trouver une compétition</span>
                                 </a>
                                 <a href="sante/sante.jsp" class="flex items-center p-3 bg-secondary-50 rounded-xl hover:bg-primary-50 transition group">
-                                    <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-red-200 transition">
-                                        <i class="fas fa-heartbeat text-red-600"></i>
+                                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3 group-hover:bg-blue-200 transition">
+                                        <i class="fas fa-heartbeat text-blue-600"></i>
                                     </div>
                                     <span class="font-medium text-secondary-700">Mettre à jour mes données</span>
                                 </a>

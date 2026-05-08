@@ -32,7 +32,7 @@
                     <a href="../communication/communication.jsp" class="sidebar-link flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-comments w-6"></i>Communication</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -91,7 +91,7 @@
                         </div>
                         <div class="flex gap-2">
                             <button class="flex-1 py-2 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-200"><i class="fas fa-chart-line mr-1"></i>Stats</button>
-                            <button class="flex-1 py-2 bg-red-100 text-red-700 rounded-lg text-sm font-medium hover:bg-red-200"><i class="fas fa-heartbeat mr-1"></i>Santé</button>
+                            <button class="flex-1 py-2 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-200"><i class="fas fa-heartbeat mr-1"></i>Santé</button>
                         </div>
                     </div>
 

@@ -726,7 +726,7 @@
                     <span>${message}</span>
                 `;
             } else {
-                notification.classList.add('bg-red-500', 'text-white');
+                notification.classList.add('bg-blue-500', 'text-white');
                 notification.innerHTML = `
                     <i class="fas fa-exclamation-circle"></i>
                     <span>${message}</span>

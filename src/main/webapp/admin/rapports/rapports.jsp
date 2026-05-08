@@ -33,7 +33,7 @@
                     <a href="rapports.jsp" class="sidebar-link active flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-file-alt w-6"></i>Rapports Ministériels</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -57,7 +57,7 @@
                         <p class="text-3xl font-bold text-slate-800">45,678</p>
                         <p class="text-xs text-blue-500"><i class="fas fa-arrow-up"></i> +18% vs 2024</p>
                     </div>
-                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-green-500">
+                    <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-blue-500">
                         <h3 class="text-slate-500 text-sm">Fédérations actives</h3>
                         <p class="text-3xl font-bold text-slate-800">42/45</p>
                         <p class="text-xs text-blue-500">93% couverture</p>

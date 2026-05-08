@@ -220,9 +220,15 @@ const auditLog = (action, entityType) => {
   };
 };
 
+// Alias exports for consistency
+const authenticate = auth;
+const requireRole = checkRole;
+
 module.exports = {
   auth,
+  authenticate,
   checkRole,
+  requireRole,
   checkAdminLevel,
   checkFederationAccess,
   checkPermission,

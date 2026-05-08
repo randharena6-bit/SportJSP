@@ -35,7 +35,7 @@
                     <a href="rapports.jsp" class="sidebar-link active flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-chart-pie w-6"></i>Rapports & Stats</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -116,7 +116,7 @@
                                 <div class="text-3xl font-bold text-purple-700 mb-1">47</div>
                                 <div class="text-sm text-slate-500">Talents confirmés</div>
                             </div>
-                            <div class="bg-green-50 rounded-xl p-4 text-center">
+                            <div class="bg-blue-50 rounded-xl p-4 text-center">
                                 <div class="text-3xl font-bold text-blue-700 mb-1">12</div>
                                 <div class="text-sm text-slate-500">Intégrés centres</div>
                             </div>

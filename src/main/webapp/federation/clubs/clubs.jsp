@@ -35,7 +35,7 @@
                     <a href="../rapports/rapports.jsp" class="sidebar-link flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-chart-pie w-6"></i>Rapports & Stats</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -103,7 +103,7 @@
                         <div class="grid grid-cols-3 gap-4 mb-4 text-center">
                             <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">67</div><div class="text-xs text-slate-500">Athlètes</div></div>
                             <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">4</div><div class="text-xs text-slate-500">Staff</div></div>
-                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-red-600">2</div><div class="text-xs text-slate-500">Entraîneurs</div></div>
+                            <div class="bg-slate-50 rounded-lg p-2"><div class="text-xl font-bold text-blue-600">2</div><div class="text-xs text-slate-500">Entraîneurs</div></div>
                         </div>
                         <div class="flex gap-2">
                             <button class="flex-1 py-2 bg-blue-100 text-blue-700 rounded-lg font-medium hover:bg-blue-200"><i class="fas fa-eye mr-1"></i>Détails</button>

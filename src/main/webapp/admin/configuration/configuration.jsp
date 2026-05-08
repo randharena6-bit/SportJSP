@@ -32,7 +32,7 @@
                     <a href="../rapports/rapports.jsp" class="sidebar-link flex items-center px-4 py-3 text-slate-700 font-medium"><i class="fas fa-file-alt w-6"></i>Rapports</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-slate-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-slate-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -73,7 +73,7 @@
                         </div>
                         <div class="border border-slate-200 rounded-xl p-4">
                             <div class="flex items-center mb-3">
-                                <div class="w-10 h-10 bg-red-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-mobile-alt text-red-600"></i></div>
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-3"><i class="fas fa-mobile-alt text-blue-600"></i></div>
                                 <span class="font-semibold text-slate-800">Airtel Money</span>
                                 <span class="ml-auto px-2 py-1 bg-blue-100 text-blue-700 rounded text-xs">Actif</span>
                             </div>

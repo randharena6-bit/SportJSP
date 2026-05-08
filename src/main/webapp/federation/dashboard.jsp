@@ -56,7 +56,7 @@
                     <a href="rapports/rapports.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-chart-pie w-6"></i>Rapports & Stats</a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-secondary-200">
-                    <a href="../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -69,7 +69,7 @@
                         <p class="text-secondary-500 text-sm">Vue d'ensemble opérationnelle - FMA</p>
                     </div>
                     <div class="flex items-center space-x-4">
-                        <button class="relative p-2 text-secondary-400 hover:text-secondary-600 transition"><i class="fas fa-bell text-xl"></i><span class="absolute top-0 right-0 w-5 h-5 bg-red-500 text-white text-xs rounded-full flex items-center justify-center">5</span></button>
+                        <button class="relative p-2 text-secondary-400 hover:text-secondary-600 transition"><i class="fas fa-bell text-xl"></i><span class="absolute top-0 right-0 w-5 h-5 bg-blue-500 text-white text-xs rounded-full flex items-center justify-center">5</span></button>
                         <div class="h-8 w-px bg-secondary-200"></div>
                         <div class="flex items-center space-x-3">
                             <img src="https://ui-avatars.com/api/?name=Admin+FMA&background=2563eb&color=fff" class="w-10 h-10 rounded-full border-2 border-blue-200">
@@ -152,8 +152,8 @@
                                             <td class="py-4 px-6 text-secondary-700">Nouvelle licence Senior</td>
                                             <td class="py-4 px-6 text-secondary-500">Aujourd'hui</td>
                                             <td class="py-4 px-6">
-                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium mr-2 hover:bg-green-200"><i class="fas fa-check mr-1"></i>Valider</button>
-                                                <button class="px-3 py-1 bg-red-100 text-red-700 rounded-lg text-sm font-medium hover:bg-red-200"><i class="fas fa-times mr-1"></i>Rejeter</button>
+                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium mr-2 hover:bg-blue-200"><i class="fas fa-check mr-1"></i>Valider</button>
+                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-200"><i class="fas fa-times mr-1"></i>Rejeter</button>
                                             </td>
                                         </tr>
                                         <tr class="border-b border-secondary-100">
@@ -166,8 +166,8 @@
                                             <td class="py-4 px-6 text-secondary-700">Renouvellement Junior</td>
                                             <td class="py-4 px-6 text-secondary-500">Hier</td>
                                             <td class="py-4 px-6">
-                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium mr-2 hover:bg-green-200"><i class="fas fa-check mr-1"></i>Valider</button>
-                                                <button class="px-3 py-1 bg-red-100 text-red-700 rounded-lg text-sm font-medium hover:bg-red-200"><i class="fas fa-times mr-1"></i>Rejeter</button>
+                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium mr-2 hover:bg-blue-200"><i class="fas fa-check mr-1"></i>Valider</button>
+                                                <button class="px-3 py-1 bg-blue-100 text-blue-700 rounded-lg text-sm font-medium hover:bg-blue-200"><i class="fas fa-times mr-1"></i>Rejeter</button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -223,12 +223,12 @@
                         <!-- Alerts -->
                         <div class="bg-white rounded-2xl shadow-sm">
                             <div class="p-6 border-b border-secondary-100">
-                                <h2 class="text-lg font-bold text-secondary-800"><i class="fas fa-exclamation-triangle text-red-500 mr-2"></i>Alertes</h2>
+                                <h2 class="text-lg font-bold text-secondary-800"><i class="fas fa-exclamation-triangle text-blue-500 mr-2"></i>Alertes</h2>
                             </div>
                             <div class="p-4">
                                 <div class="space-y-3">
-                                    <div class="flex items-start p-3 bg-red-50 rounded-xl">
-                                        <i class="fas fa-user-times text-red-500 mt-1 mr-3"></i>
+                                    <div class="flex items-start p-3 bg-blue-50 rounded-xl">
+                                        <i class="fas fa-user-times text-blue-500 mt-1 mr-3"></i>
                                         <div>
                                             <p class="text-sm font-medium text-secondary-800">5 dossiers incomplets</p>
                                             <p class="text-xs text-secondary-500">Athlètes sans certificat médical</p>

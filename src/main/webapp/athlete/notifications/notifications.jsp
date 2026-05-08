@@ -45,10 +45,10 @@
                     <a href="../competitions/competitions.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-trophy w-6"></i>Compétitions</a>
                     <a href="../sante/sante.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-heartbeat w-6"></i>Santé & Performance</a>
                     <a href="../medias/medias.jsp" class="sidebar-link flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-video w-6"></i>Médias & E-sport</a>
-                    <a href="notifications.jsp" class="sidebar-link active flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-bell w-6"></i>Notifications<span class="ml-auto bg-red-500 text-white text-xs px-2 py-0.5 rounded-full">3</span></a>
+                    <a href="notifications.jsp" class="sidebar-link active flex items-center px-4 py-3 text-secondary-700 font-medium"><i class="fas fa-bell w-6"></i>Notifications<span class="ml-auto bg-blue-500 text-white text-xs px-2 py-0.5 rounded-full">3</span></a>
                 </nav>
                 <div class="mt-8 pt-6 border-t border-secondary-200">
-                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-red-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
+                    <a href="../../index.jsp" class="flex items-center px-4 py-3 text-secondary-500 hover:text-blue-600 font-medium transition"><i class="fas fa-sign-out-alt w-6"></i>Déconnexion</a>
                 </div>
             </div>
         </aside>
@@ -82,8 +82,8 @@
                     <!-- Notification 1 - Unread -->
                     <div class="bg-white rounded-xl shadow-sm p-6 notification-unread">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                                <i class="fas fa-exclamation-circle text-red-600 text-xl"></i>
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-exclamation-circle text-blue-600 text-xl"></i>
                             </div>
                             <div class="flex-1">
                                 <div class="flex items-center justify-between">
