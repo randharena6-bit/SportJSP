@@ -159,5 +159,3 @@ curl "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-lates
       }
     }
   }
-
-

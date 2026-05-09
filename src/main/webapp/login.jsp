@@ -620,7 +620,25 @@
                     form.classList.add('success-pulse');
                     showNotification('Connexion réussie !', 'success');
                     setTimeout(() => {
-                        window.location.href = 'dashboard.jsp';
+                        // Redirection selon le rôle
+                        const role = result.user.role?.toLowerCase() || data.role;
+                        let dashboardUrl = 'dashboard.jsp';
+                        switch(role) {
+                            case 'athlete':
+                                dashboardUrl = 'athlete/dashboard.jsp';
+                                break;
+                            case 'coach':
+                                dashboardUrl = 'coach/dashboard.jsp';
+                                break;
+                            case 'federation':
+                            case 'admin_federation':
+                                dashboardUrl = 'federation/dashboard.jsp';
+                                break;
+                            case 'admin':
+                                dashboardUrl = 'admin/dashboard.jsp';
+                                break;
+                        }
+                        window.location.href = dashboardUrl;
                     }, 1000);
                 } else {
                     form.classList.add('shake');
@@ -685,7 +703,25 @@
                     form.classList.add('success-pulse');
                     showNotification('Compte créé avec succès !', 'success');
                     setTimeout(() => {
-                        window.location.href = 'dashboard.jsp';
+                        // Redirection selon le rôle
+                        const role = result.user.role?.toLowerCase() || data.role;
+                        let dashboardUrl = 'dashboard.jsp';
+                        switch(role) {
+                            case 'athlete':
+                                dashboardUrl = 'athlete/dashboard.jsp';
+                                break;
+                            case 'coach':
+                                dashboardUrl = 'coach/dashboard.jsp';
+                                break;
+                            case 'federation':
+                            case 'admin_federation':
+                                dashboardUrl = 'federation/dashboard.jsp';
+                                break;
+                            case 'admin':
+                                dashboardUrl = 'admin/dashboard.jsp';
+                                break;
+                        }
+                        window.location.href = dashboardUrl;
                     }, 1000);
                 } else {
                     form.classList.add('shake');
